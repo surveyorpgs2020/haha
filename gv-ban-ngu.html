@@ -1,0 +1,2835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="./img/square_favicon_d3cd0397f750464fa792cbe4f8580bd0.png" type="image/png">
+    <title>ActiveEnglish</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl/owl.carousel.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scripts.js"></script>
+    <!-- <script src="./js/jquery.min.1.11.0.js"></script> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- <style type="text/css"
+        data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">
+        .fb_hidden {
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_reposition {
+            overflow: hidden;
+            position: relative
+        }
+
+        .fb_invisible {
+            display: none
+        }
+
+        .fb_reset {
+            background: none;
+            border: 0;
+            border-spacing: 0;
+            color: #000;
+            cursor: auto;
+            direction: ltr;
+            font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1;
+            margin: 0;
+            overflow: visible;
+            padding: 0;
+            text-align: left;
+            text-decoration: none;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal
+        }
+
+        .fb_reset>div {
+            overflow: hidden
+        }
+
+        @keyframes fb_transform {
+            from {
+                opacity: 0;
+                transform: scale(.95)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        .fb_animate {
+            animation: fb_transform .3s forwards
+        }
+
+        .fb_hidden {
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_reposition {
+            overflow: hidden;
+            position: relative
+        }
+
+        .fb_invisible {
+            display: none
+        }
+
+        .fb_reset {
+            background: none;
+            border: 0;
+            border-spacing: 0;
+            color: #000;
+            cursor: auto;
+            direction: ltr;
+            font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1;
+            margin: 0;
+            overflow: visible;
+            padding: 0;
+            text-align: left;
+            text-decoration: none;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal
+        }
+
+        .fb_reset>div {
+            overflow: hidden
+        }
+
+        @keyframes fb_transform {
+            from {
+                opacity: 0;
+                transform: scale(.95)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        .fb_animate {
+            animation: fb_transform .3s forwards
+        }
+
+        .fb_dialog {
+            background: rgba(82, 82, 82, .7);
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_dialog_advanced {
+            border-radius: 8px;
+            padding: 10px
+        }
+
+        .fb_dialog_content {
+            background: #fff;
+            color: #373737
+        }
+
+        .fb_dialog_close_icon {
+            background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+            cursor: pointer;
+            display: block;
+            height: 15px;
+            position: absolute;
+            right: 18px;
+            top: 17px;
+            width: 15px
+        }
+
+        .fb_dialog_mobile .fb_dialog_close_icon {
+            left: 5px;
+            right: auto;
+            top: 5px
+        }
+
+        .fb_dialog_padding {
+            background-color: transparent;
+            position: absolute;
+            width: 1px;
+            z-index: -1
+        }
+
+        .fb_dialog_close_icon:hover {
+            background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent
+        }
+
+        .fb_dialog_close_icon:active {
+            background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent
+        }
+
+        .fb_dialog_iframe {
+            line-height: 0
+        }
+
+        .fb_dialog_content .dialog_title {
+            background: #6d84b4;
+            border: 1px solid #365899;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0
+        }
+
+        .fb_dialog_content .dialog_title>span {
+            background: url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+            float: left;
+            padding: 5px 0 7px 26px
+        }
+
+        body.fb_hidden {
+            height: 100%;
+            left: 0;
+            margin: 0;
+            overflow: visible;
+            position: absolute;
+            top: -10000px;
+            transform: none;
+            width: 100%
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading {
+            background: url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+            min-height: 100%;
+            min-width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 10001
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered {
+            background: none;
+            height: auto;
+            min-height: initial;
+            min-width: initial;
+            width: auto
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+            width: 100%
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+            background: none
+        }
+
+        .loading.centered #fb_dialog_loader_close {
+            clear: both;
+            color: #fff;
+            display: block;
+            font-size: 18px;
+            padding-top: 20px
+        }
+
+        #fb-root #fb_dialog_ipad_overlay {
+            background: rgba(0, 0, 0, .4);
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 10000
+        }
+
+        #fb-root #fb_dialog_ipad_overlay.hidden {
+            display: none
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading iframe {
+            visibility: hidden
+        }
+
+        .fb_dialog_mobile .fb_dialog_iframe {
+            position: sticky;
+            top: 0
+        }
+
+        .fb_dialog_content .dialog_header {
+            background: linear-gradient(from(#738aba), to(#2c4987));
+            border-bottom: 1px solid;
+            border-color: #043b87;
+            box-shadow: white 0 1px 1px -1px inset;
+            color: #fff;
+            font: bold 14px Helvetica, sans-serif;
+            text-overflow: ellipsis;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+            vertical-align: middle;
+            white-space: nowrap
+        }
+
+        .fb_dialog_content .dialog_header table {
+            height: 43px;
+            width: 100%
+        }
+
+        .fb_dialog_content .dialog_header td.header_left {
+            font-size: 12px;
+            padding-left: 5px;
+            vertical-align: middle;
+            width: 60px
+        }
+
+        .fb_dialog_content .dialog_header td.header_right {
+            font-size: 12px;
+            padding-right: 5px;
+            vertical-align: middle;
+            width: 60px
+        }
+
+        .fb_dialog_content .touchable_button {
+            background: linear-gradient(from(#4267B2), to(#2a4887));
+            background-clip: padding-box;
+            border: 1px solid #29487d;
+            border-radius: 3px;
+            display: inline-block;
+            line-height: 18px;
+            margin-top: 3px;
+            max-width: 85px;
+            padding: 4px 12px;
+            position: relative
+        }
+
+        .fb_dialog_content .dialog_header .touchable_button input {
+            background: none;
+            border: none;
+            color: #fff;
+            font: bold 12px Helvetica, sans-serif;
+            margin: 2px -12px;
+            padding: 2px 6px 3px 6px;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+        }
+
+        .fb_dialog_content .dialog_header .header_center {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle
+        }
+
+        .fb_dialog_content .dialog_content {
+            background: url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+            border: 1px solid #4a4a4a;
+            border-bottom: 0;
+            border-top: 0;
+            height: 150px
+        }
+
+        .fb_dialog_content .dialog_footer {
+            background: #f5f6f7;
+            border: 1px solid #4a4a4a;
+            border-top-color: #ccc;
+            height: 40px
+        }
+
+        #fb_dialog_loader_close {
+            float: left
+        }
+
+        .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+            visibility: hidden
+        }
+
+        #fb_dialog_loader_spinner {
+            animation: rotateSpinner 1.2s linear infinite;
+            background-color: transparent;
+            background-image: url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            height: 24px;
+            width: 24px
+        }
+
+        @keyframes rotateSpinner {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fb_iframe_widget {
+            display: inline-block;
+            position: relative
+        }
+
+        .fb_iframe_widget span {
+            display: inline-block;
+            position: relative;
+            text-align: justify
+        }
+
+        .fb_iframe_widget iframe {
+            position: absolute
+        }
+
+        .fb_iframe_widget_fluid_desktop,
+        .fb_iframe_widget_fluid_desktop span,
+        .fb_iframe_widget_fluid_desktop iframe {
+            max-width: 100%
+        }
+
+        .fb_iframe_widget_fluid_desktop iframe {
+            min-width: 220px;
+            position: relative
+        }
+
+        .fb_iframe_widget_lift {
+            z-index: 1
+        }
+
+        .fb_iframe_widget_fluid {
+            display: inline
+        }
+
+        .fb_iframe_widget_fluid span {
+            width: 100%
+        }
+
+        .fb_mpn_mobile_landing_page_slide_out {
+            animation-duration: 200ms;
+            animation-name: fb_mpn_landing_page_slide_out;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_landing_page_slide_out_from_left {
+            animation-duration: 200ms;
+            animation-name: fb_mpn_landing_page_slide_out_from_left;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_landing_page_slide_up {
+            animation-duration: 500ms;
+            animation-name: fb_mpn_landing_page_slide_up;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_bounce_in {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_bounce_in;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_bounce_out {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_bounce_out;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_bounce_out_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_fade_out;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_in_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_in_v2;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_in_from_left {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_in_from_left;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_out_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_out_v2;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_out_from_left {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_out_from_left;
+            transition-timing-function: ease-in
+        }
+
+        .fb_invisible_flow {
+            display: inherit;
+            height: 0;
+            overflow-x: hidden;
+            width: 0
+        }
+
+        @keyframes fb_mpn_landing_page_slide_out {
+            0% {
+                margin: 0 12px;
+                width: 100% - 24px
+            }
+
+            60% {
+                border-radius: 18px
+            }
+
+            100% {
+                border-radius: 50%;
+                margin: 0 24px;
+                width: 60px
+            }
+        }
+
+        @keyframes fb_mpn_landing_page_slide_out_from_left {
+            0% {
+                left: 12px;
+                width: 100% - 24px
+            }
+
+            60% {
+                border-radius: 18px
+            }
+
+            100% {
+                border-radius: 50%;
+                left: 12px;
+                width: 60px
+            }
+        }
+
+        @keyframes fb_mpn_landing_page_slide_up {
+            0% {
+                bottom: 0;
+                opacity: 0
+            }
+
+            100% {
+                bottom: 24px;
+                opacity: 1
+            }
+        }
+
+        @keyframes fb_mpn_bounce_in {
+            0% {
+                opacity: .5;
+                top: 100%
+            }
+
+            100% {
+                opacity: 1;
+                top: 0
+            }
+        }
+
+        @keyframes fb_mpn_fade_out {
+            0% {
+                bottom: 30px;
+                opacity: 1
+            }
+
+            100% {
+                bottom: 0;
+                opacity: 0
+            }
+        }
+
+        @keyframes fb_mpn_bounce_out {
+            0% {
+                opacity: 1;
+                top: 0
+            }
+
+            100% {
+                opacity: .5;
+                top: 100%
+            }
+        }
+
+        @keyframes fb_bounce_in_v2 {
+            0% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom right
+            }
+
+            50% {
+                transform: scale(1.03, 1.03);
+                transform-origin: bottom right
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom right
+            }
+        }
+
+        @keyframes fb_bounce_in_from_left {
+            0% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom left
+            }
+
+            50% {
+                transform: scale(1.03, 1.03);
+                transform-origin: bottom left
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom left
+            }
+        }
+
+        @keyframes fb_bounce_out_v2 {
+            0% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom right
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom right
+            }
+        }
+
+        @keyframes fb_bounce_out_from_left {
+            0% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom left
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom left
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            0% {
+                opacity: .1;
+                transform: translateY(100%)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes slideInFromBottomDelay {
+            0% {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+
+            97% {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+    </style> -->
+</head>
+
+<!-- class="index locked-scroll" -->
+
+<body id="lama-theme">
+
+    <!-- facebook  -->
+    <!-- <div id="fb-root" class=" fb_reset">
+        <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+            <div></div>
+        </div>
+        <div class=" fb_iframe_widget fb_invisible_flow"
+            fb-iframe-plugin-query="app_id=&amp;attribution=biz_inbox&amp;container_width=1349&amp;current_url=https%3A%2F%2Factiveenglish.edu.vn%2F&amp;is_loaded_by_facade=true&amp;locale=vi_VN&amp;log_id=42cff958-ebe1-4055-83b7-f38178f273de&amp;page_id=106306758343475&amp;request_time=1693029119214&amp;sdk=joey">
+            <span style="vertical-align: bottom; width: 1000px; height: 0px;"><iframe name="f2b3fba6086b45c"
+                    width="1000px" height="1000px" data-testid="dialog_iframe" title="" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
+                    src="https://www.facebook.com/v11.0/plugins/customerchat.php?app_id=&amp;attribution=biz_inbox&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df32ab25a349b31%26domain%3Dactiveenglish.edu.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Factiveenglish.edu.vn%252Ff205969015b8f14%26relation%3Dparent.parent&amp;container_width=1349&amp;current_url=https%3A%2F%2Factiveenglish.edu.vn%2F&amp;is_loaded_by_facade=true&amp;locale=vi_VN&amp;log_id=42cff958-ebe1-4055-83b7-f38178f273de&amp;page_id=106306758343475&amp;request_time=1693029119214&amp;sdk=joey"
+                    style="padding: 0px; position: fixed; z-index: 2147483646; border-radius: 16px; top: auto; background: none; width: 399px; bottom: 84px; max-height: 0px; right: 16px; visibility: visible; height: 373px; min-height: 0px;"
+                    class=" fb_customer_chat_bounce_out_v2"></iframe></span>
+        </div>
+        <div class="fb_dialog  fb_dialog_advanced" alignment="right" desktop_bottom_spacing="24">
+            <div class="fb_dialog_content"><iframe name="blank_f2b3fba6086b45c" width="60px" tabindex="-1"
+                    data-testid="bubble_iframe" frameborder="0" allowtransparency="true" allowfullscreen="true"
+                    scrolling="no" allow="encrypted-media"
+                    src="https://www.facebook.com/v11.0/plugins/customer_chat/bubble"
+                    style="background: none; border-radius: 60px; bottom: 24px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px; display: block; height: 60px; margin: 0px 12px; overflow: visible; padding: 0px; position: fixed; right: 12px; top: auto; width: 60px; z-index: 2147483644;"></iframe><iframe
+                    name="availabilityStatus_f2b3fba6086b45c" tabindex="-1" data-testid="availabilityStatus_iframe"
+                    frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
+                    allow="encrypted-media" src="https://www.facebook.com/v11.0/plugins/customer_chat/bubble"
+                    style="border-radius: 50%; bottom: 21.5px; height: 15px; position: fixed; right: 24px; width: 15px; z-index: 2147483646;"></iframe><iframe
+                    name="unread_f2b3fba6086b45c" tabindex="-1" data-testid="unread_iframe" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
+                    src="https://www.facebook.com/v11.0/plugins/customer_chat/bubble"
+                    style="background: none; border-radius: 4pt; bottom: 68px; height: 24px; position: fixed; right: 22px; width: 20px; z-index: 2147483645;"></iframe><iframe
+                    name="greeting_f2b3fba6086b45c" tabindex="-1" data-testid="greeting_iframe" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
+                    src="https://www.facebook.com/v11.0/plugins/customer_chat/bubble"
+                    style="border: none; max-height: 0px; min-height: 0px; bottom: 96px;"></iframe></div>
+        </div>
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "106306758343475");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script> -->
+
+    <!-- facebook  -->
+
+
+    <!--Header-->
+
+    <header id="site-header" class="main-header mainHeader_temp02 header-style">
+
+        <div class="header-upper-middle">
+            <div class="container-fluid">
+                <div class="flexContainer-header">
+                    <div class="header-upper-navbar visible-xs visible-sm">
+                        <div class="header-action header-action_menu">
+                            <div class="header-action_text">
+                                <a class="header-action__link header-action-toggle" href="javascript:void(0)"
+                                    id="site-menu-handle" aria-label="Menu" title="Menu">
+                                    <span class="hamburger-menu " aria-hidden="true">
+                                        <span class="bar"></span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="header-action_dropdown">
+                                <span class="box-triangle">
+                                    <svg viewBox="0 0 20 9" role="presentation">
+                                        <path
+                                            d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
+                                            fill="#ffffff"></path>
+                                    </svg>
+                                </span>
+                                <div class="header-dropdown_content">
+                                    <div class="site-menu menu-mobile" id="siteNav-menu">
+                                        <div class="menu-mobile--wrap">
+                                            <div class="menu-mobile--bottom">
+                                                <nav id="mp-menu" class="mp-menu mp-cover">
+                                                    <div class="mp-level" data-level="1">
+                                                        <div class="mplus-menu">
+                                                            <ul class="mm-panel vertical-menu-list list-root">
+                                                                <li class="active">
+                                                                    <a class="parent" href="./">TRANG CHỦ</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a class="parent" href="./cac-khoa-hoc.html">CÁC
+                                                                        KHÓA
+                                                                        HỌC</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a class="parent" href="./thu-vien-1.html">THƯ
+                                                                        VIỆN</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a class="parent" href="./about-us.html">GIỚI
+                                                                        THIỆU</a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a class="parent" href="./contact-us.html">LIÊN
+                                                                        HỆ</a>
+                                                                </li>
+                                                                <li class="mm-divider">
+                                                                    <div
+                                                                        class="mobile-menu__section mobile-menu__section--loose">
+                                                                        <p class="mobile-menu__section-title">Bạn cần hỗ
+                                                                            trợ?</p>
+                                                                        <div class="mobile-menu__help-wrapper">
+                                                                            <svg class="icon icon--bi-phone"
+                                                                                viewBox="0 0 24 24" role="presentation">
+                                                                                <g stroke-width="2" fill="none"
+                                                                                    fill-rule="evenodd"
+                                                                                    stroke-linecap="square">
+                                                                                    <path
+                                                                                        d="M17 15l-3 3-8-8 3-3-5-5-3 3c0 9.941 8.059 18 18 18l3-3-5-5z"
+                                                                                        stroke="#1e2d7d"></path>
+                                                                                    <path
+                                                                                        d="M14 1c4.971 0 9 4.029 9 9m-9-5c2.761 0 5 2.239 5 5"
+                                                                                        stroke="#00badb"></path>
+                                                                                </g>
+                                                                            </svg>
+                                                                            <a href="tel:0932093566" rel="nofollow">Liên
+                                                                                hệ: 0932.0935.66</a>
+                                                                        </div>
+                                                                        <div class="mobile-menu__help-wrapper">
+                                                                            <svg class="icon icon--bi-email"
+                                                                                viewBox="0 0 22 22" role="presentation">
+                                                                                <g fill="none" fill-rule="evenodd">
+                                                                                    <path stroke="#00badb"
+                                                                                        d="M.916667 10.08333367l3.66666667-2.65833334v4.65849997zm20.1666667 0L17.416667 7.42500033v4.65849997z">
+                                                                                    </path>
+                                                                                    <path stroke="#1e2d7d"
+                                                                                        stroke-width="2"
+                                                                                        d="M4.58333367 7.42500033L.916667 10.08333367V21.0833337h20.1666667V10.08333367L17.416667 7.42500033">
+                                                                                    </path>
+                                                                                    <path stroke="#1e2d7d"
+                                                                                        stroke-width="2"
+                                                                                        d="M4.58333367 12.1000003V.916667H17.416667v11.1833333m-16.5-2.01666663L21.0833337 21.0833337m0-11.00000003L11.0000003 15.5833337">
+                                                                                    </path>
+                                                                                    <path
+                                                                                        d="M8.25000033 5.50000033h5.49999997M8.25000033 9.166667h5.49999997"
+                                                                                        stroke="#00badb"
+                                                                                        stroke-width="2"
+                                                                                        stroke-linecap="square"></path>
+                                                                                </g>
+                                                                            </svg>
+                                                                            <a href="mailto:ActiveEnglish.edu.vn@gmail.com"
+                                                                                rel="nofollow">ActiveEnglish.edu.vn@gmail.com</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+
+
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-upper-logo">
+                        <div class="header-logo wrap-logo" itemscope="" itemtype="http://schema.org/Organization">
+
+                            <a href="./" itemprop="url" aria-label="ActiveEnglish">
+                                <img itemprop="logo" src="./img/logo3_54d1aa38beac4aae9f935bd7fda15081.png"
+                                    alt="ActiveEnglish" class="img-responsive logoimg">
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="header-upper-menu hidden-sm hidden-xs">
+                        <div class="menu-desktop ">
+                            <div id="nav">
+                                <nav class="main-nav text-center">
+                                    <ul class="clearfix">
+
+
+                                        <li class="active">
+                                            <a href="./" title="TRANG CHỦ">
+                                                TRANG CHỦ
+                                            </a>
+                                        </li>
+
+
+
+                                        <li class="">
+                                            <a href="./cac-khoa-hoc.html" title="CÁC KHÓA HỌC">
+                                                CÁC KHÓA HỌC
+                                            </a>
+                                        </li>
+
+
+
+                                        <li class="">
+                                            <a href="./thu-vien-1.html" title="THƯ VIỆN">
+                                                THƯ VIỆN
+                                            </a>
+                                        </li>
+
+
+
+                                        <li class="">
+                                            <a href="./about-us.html" title="GIỚI THIỆU">
+                                                GIỚI THIỆU
+                                            </a>
+                                        </li>
+
+
+
+                                        <li class="">
+                                            <a href="./contact-us.html" title="LIÊN HỆ">
+                                                LIÊN HỆ
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </nav>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="header-upper-icon">
+                        <div class="header-wrap-icon">
+                            <div class="header-action header-action_search">
+                                <div class="header-action_text">
+                                    <a class="header-action__link header-action-toggle" href="javascript:void(0)"
+                                        id="site-search-handle" aria-label="Tìm kiếm" title="Tìm kiếm">
+                                        <span class="box-icon">
+                                            <svg class="svg-ico-search" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;"
+                                                xml:space="preserve">
+                                                <path
+                                                    d="M10,2C4.5,2,0,6.5,0,12s4.5,10,10,10s10-4.5,10-10S15.5,2,10,2z M10,19c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S13.9,19,10,19z">
+                                                </path>
+                                                <rect x="17" y="17"
+                                                    transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2844 19.5856)"
+                                                    width="4" height="8"></rect>
+                                            </svg>
+                                            <span class="box-icon--close">
+                                                <svg viewBox="0 0 19 19" role="presentation">
+                                                    <path
+                                                        d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                                        fill="currentColor" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="header-action_dropdown">
+                                    <span class="box-triangle">
+                                        <svg viewBox="0 0 20 9" role="presentation">
+                                            <path
+                                                d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </span>
+                                    <div class="header-dropdown_content">
+                                        <p class="ttbold">Tìm kiếm</p>
+                                        <div class="site_search">
+
+                                            <div class="search-box wpo-wrapper-search">
+                                                <form action="/search"
+                                                    class="searchform searchform-categoris ultimate-search">
+                                                    <div class="wpo-search-inner">
+                                                        <input type="hidden" name="type" value="product">
+                                                        <input required="" id="inputSearchAuto" name="q" maxlength="40"
+                                                            autocomplete="off"
+                                                            class="searchinput input-search search-input" type="text"
+                                                            size="20" placeholder="Tìm kiếm sản phẩm..."
+                                                            aria-label="Search">
+                                                    </div>
+                                                    <button type="submit" class="btn-search btn" id="search-header-btn"
+                                                        aria-label="Tìm kiếm">
+                                                        <svg version="1.1" class="svg search"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;"
+                                                            xml:space="preserve">
+                                                            <path
+                                                                d="M10,2C4.5,2,0,6.5,0,12s4.5,10,10,10s10-4.5,10-10S15.5,2,10,2z M10,19c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S13.9,19,10,19z">
+                                                            </path>
+                                                            <rect x="17" y="17"
+                                                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2844 19.5856)"
+                                                                width="4" height="8"></rect>
+                                                        </svg>
+                                                    </button>
+                                                </form>
+                                                <div id="ajaxSearchResults"
+                                                    class="smart-search-wrapper ajaxSearchResults"
+                                                    style="display: none">
+                                                    <div class="resultsContent"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="header-action header-action_account">
+                                <div class="header-action_text">
+                                    <a class="header-action__link  header-action-toggle " href="javascript:void(0);"
+                                        id="site-account-handle" aria-label="Tài khoản" title="Tài khoản">
+                                        <span class="box-icon">
+                                            <svg class="svg-ico-account" version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="510px"
+                                                height="510px" viewBox="0 0 510 510"
+                                                style="enable-background:new 0 0 510 510;" xml:space="preserve">
+                                                <g>
+                                                    <g id="account-circle">
+                                                        <path
+                                                            d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M255,76.5
+                                                                     c43.35,0,76.5,33.15,76.5,76.5s-33.15,76.5-76.5,76.5c-43.35,0-76.5-33.15-76.5-76.5S211.65,76.5,255,76.5z M255,438.6
+                                                                     c-63.75,0-119.85-33.149-153-81.6c0-51,102-79.05,153-79.05S408,306,408,357C374.85,405.45,318.75,438.6,255,438.6z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <span class="box-icon--close">
+                                                <svg viewBox="0 0 19 19" role="presentation">
+                                                    <path
+                                                        d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                                        fill="currentColor" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="header-action_dropdown ">
+                                    <span class="box-triangle">
+                                        <svg viewBox="0 0 20 9" role="presentation">
+                                            <path
+                                                d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </span>
+                                    <div class="header-dropdown_content">
+                                        <div class="site_account " id="siteNav-account">
+                                            <div class="site_account_panel_list">
+                                                <div id="header-login-panel"
+                                                    class="site_account_panel site_account_default is-selected">
+                                                    <header class="site_account_header">
+                                                        <h2 class="site_account_title heading">Đăng nhập tài khoản</h2>
+                                                        <p class="site_account_legend">Nhập email và mật khẩu của bạn:
+                                                        </p>
+                                                    </header>
+                                                    <div class="site_account_inner">
+                                                        <form accept-charset="UTF-8" action="/account/login"
+                                                            id="customer_login" method="post">
+                                                            <input name="form_type" type="hidden"
+                                                                value="customer_login">
+                                                            <input name="utf8" type="hidden" value="✓">
+
+
+
+                                                            <div
+                                                                class="form__input-wrapper form__input-wrapper--labelled">
+                                                                <input type="email" id="login-customer[email]"
+                                                                    class="form__field form__field--text"
+                                                                    name="customer[email]" required="required">
+                                                                <label for="login-customer[email]"
+                                                                    class="form__floating-label">Email</label>
+                                                            </div>
+                                                            <div
+                                                                class="form__input-wrapper form__input-wrapper--labelled">
+
+                                                                <input type="password" id="login-customer[password]"
+                                                                    class="form__field form__field--text"
+                                                                    name="customer[password]" required="required"
+                                                                    autocomplete="current-password">
+                                                                <label for="login-customer[password]"
+                                                                    class="form__floating-label">Mật khẩu</label>
+
+                                                                <div class="sitebox-recaptcha">
+                                                                    This site is protected by reCAPTCHA and the Google
+                                                                    <a href="https://policies.google.com/privacy"
+                                                                        target="_blank" rel="noreferrer">Privacy
+                                                                        Policy</a>
+                                                                    and <a href="https://policies.google.com/terms"
+                                                                        target="_blank" rel="noreferrer">Terms of
+                                                                        Service</a> apply.
+                                                                </div>
+                                                            </div>
+                                                            <button type="submit" class="form__submit button dark"
+                                                                id="form_submit-login">Đăng nhập</button>
+
+                                                            <input id="6e40574f50694cf4a2c85a5fd63cc98f"
+                                                                name="g-recaptcha-response" type="hidden"
+                                                                value="03ADUVZwCYUOj-v3cy_PjnClH4pEkKSVDYzu0XlhTR9P3ryqFCxPhL_b8i3Lfbyj_XoDs3eY3VlvzMNOT9d2zXHj3-Rw4oyq2h2860yb2YnlHKvJ8YGeX1_nD_CJvyPLctMv8ICCfkQUh8tukRdTRvGzC30uBTKsdTBoMbUHuh4rEva_SPR7SUDvlHCzwyEP3uXM0SssO1aIxp4UeE9TKRWTNa8SYg_NISs3ok1-sb5c1pMGSRGAUXsvT63scVGBPBdLrUl0pSds51pk-bn3Pdk5aGDiPDjGj3mTLF1NPyTRG8U5BN7aKUsxJemgwmGuuHLK7AktLzSfGDEZE57SA473uOchHpCMG_jWQKrgpEfGmb2a0raf0AxvnKWCuKokzrWcHMOTdXhCObqYrunbLy_OoYy8Kson0rLjJT34T7gUfXOfZnmFIFvAfqlYOYmoS82tbvD6owODN1fnLWydoZjAtXAG3GxRcuS0Iajv-DjmA_FWGHYuLFc3MXJGIXp_INjkt88yOPskOrTE5UDsCBTeYCaJKnPd4k1hnugIaGa-GosxizYitBcdM">
+                                                            <script
+                                                                src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script>
+                                                            <script>grecaptcha.ready(function () { grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', { action: 'submit' }).then(function (token) { document.getElementById('6e40574f50694cf4a2c85a5fd63cc98f').value = token; }); });</script>
+                                                        </form>
+                                                        <div class="site_account_secondary-action">
+                                                            <p>Khách hàng mới?
+                                                                <a class="link" href="/account/register">Tạo tài
+                                                                    khoản</a>
+                                                            </p>
+                                                            <p>Quên mật khẩu?
+                                                                <button aria-controls="header-recover-panel"
+                                                                    class="js-link link">Khôi phục mật khẩu</button>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="header-recover-panel"
+                                                    class="site_account_panel  site_account_sliding">
+                                                    <header class="site_account_header">
+                                                        <h2 class="site_account_title heading">Khôi phục mật khẩu</h2>
+                                                        <p class="site_account_legend">Nhập email của bạn:</p>
+                                                    </header>
+                                                    <div class="site_account_inner">
+                                                        <form accept-charset="UTF-8" action="/account/recover"
+                                                            method="post">
+                                                            <input name="form_type" type="hidden"
+                                                                value="recover_customer_password">
+                                                            <input name="utf8" type="hidden" value="✓">
+
+
+
+                                                            <div
+                                                                class="form__input-wrapper form__input-wrapper--labelled">
+                                                                <input type="email" id="recover-customer[recover_email]"
+                                                                    class="form__field form__field--text" name="email"
+                                                                    required="required">
+                                                                <label for="recover-customer[recover_email]"
+                                                                    class="form__floating-label">Email</label>
+                                                                <div class="sitebox-recaptcha">
+                                                                    This site is protected by reCAPTCHA and the Google
+                                                                    <a href="https://policies.google.com/privacy"
+                                                                        target="_blank" rel="noreferrer">Privacy
+                                                                        Policy</a>
+                                                                    and <a href="https://policies.google.com/terms"
+                                                                        target="_blank" rel="noreferrer">Terms of
+                                                                        Service</a> apply.
+                                                                </div>
+                                                            </div>
+                                                            <button type="submit" class="form__submit button dark"
+                                                                id="form_submit-recover">Khôi phục</button>
+
+                                                            <input id="42d2c9316b2b43bd8e88b7ba468e3cc8"
+                                                                name="g-recaptcha-response" type="hidden"
+                                                                value="03ADUVZwBc4UdwDfYBdb8NRr7ElXhMKJT51Pugo0A22IaFVE2mEgYe_bUTQyxluM87EpJqLsNZkpL8JkW0WjG3gMCzxlMCiY_p_EtM3taR9zFO5AfUNybfuK51ZAHGKkYoltF9bPwO__mxR7j3ypPUMyd2rm7C_gAN5s4BGY5dVFz9nYBu-BhACaAhDDiLF00yxXg9fwCJa5obAiO0dLk01mNKoPB8oxYCClHi9hpE1OXjlnujq7kgDAffZsDUgg-tjNsJPANiN55BDCYszBt2yHq2PZmY9cdQ1hjujU9CrrTZg8kpB_11NPDhQPElon-3Ey8Wejbxfe946PrRQSkKU_uOYvea0i4jrDykg4tyHPbRxRFozufa55SmojwOyTh_rt8W9eDhz9VzvjO9DRcQwwU6iA4nt4HqC3cA_zeOaaCSZYacyHRL0rf7p1dGcR0XMnnKYTsGr3iG38sUf6CMLWZLKH_vJVGL5ezOjcq-tNFvtIW_99NKlsOfeT5ZHQwvtsDwAfH5I2PDjiZSBIFeV3mDOjPyTomn2pBoFYf8morqU7N6VbDvlW4">
+                                                            <script
+                                                                src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script>
+                                                            <script>grecaptcha.ready(function () { grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', { action: 'submit' }).then(function (token) { document.getElementById('42d2c9316b2b43bd8e88b7ba468e3cc8').value = token; }); });</script>
+                                                        </form>
+                                                        <div class="site_account_secondary-action">
+                                                            <p>Bạn đã nhớ mật khẩu?
+                                                                <button aria-controls="header-login-panel"
+                                                                    class="js-link link">Trở về đăng nhập</button>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div> -->
+                            <!-- <div class="header-action header-action_cart">
+                                <div class="header-action_text">
+                                    <a class="header-action__link header-action-toggle" href="javascript:void(0)"
+                                        id="site-cart-handle" aria-label="Giỏ hàng" title="Giỏ hàng">
+                                        <span class="box-icon">
+                                            <svg version="1.1" class="svg-ico-cart" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;"
+                                                xml:space="preserve">
+                                                <g>
+                                                    <path d="M0,6v21h24V6H0z M22,25H2V8h20V25z"></path>
+                                                </g>
+                                                <g>
+                                                    <path
+                                                        d="M12,2c3,0,3,2.3,3,4h2c0-2.8-1-6-5-6S7,3.2,7,6h2C9,4.3,9,2,12,2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="box-icon--close">
+                                                <svg viewBox="0 0 19 19" role="presentation">
+                                                    <path
+                                                        d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                                        fill="currentColor" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="count-holder">
+                                                <span class="count">0</span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="header-action_dropdown">
+                                    <span class="box-triangle">
+                                        <svg viewBox="0 0 20 9" role="presentation">
+                                            <path
+                                                d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z"
+                                                fill="#ffffff"></path>
+                                        </svg>
+                                    </span>
+                                    <div class="header-dropdown_content">
+
+                                        <div class="site-cart">
+                                            <div class="cart-ttbold">
+                                                <p class="ttbold">Giỏ hàng</p>
+                                            </div>
+                                            <div class="cart-view clearfix">
+                                                <div class="cart-view-scroll">
+                                                    <table id="clone-item-cart" class="table-clone-cart">
+                                                        <tbody>
+                                                            <tr class="item_2 hidden">
+                                                                <td class="img"><a href="" title=""><img src=""
+                                                                            alt=""></a></td>
+                                                                <td>
+                                                                    <p class="pro-title">
+                                                                        <a class="pro-title-view" href="" title=""></a>
+                                                                        <span class="variant"></span>
+                                                                    </p>
+                                                                    <div class="mini-cart_quantity">
+                                                                        <div class="pro-quantity-view"><span
+                                                                                class="qty-value"></span></div>
+                                                                        <div class="pro-price-view"></div>
+                                                                    </div>
+                                                                    <div class="remove_link remove-cart"></div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table id="cart-view">
+
+                                                        <tbody>
+                                                            <tr class="item-cart_empty">
+                                                                <td>
+                                                                    <div class="svgico-mini-cart">
+                                                                        <svg width="81" height="70" viewBox="0 0 81 70">
+                                                                            <g transform="translate(0 2)"
+                                                                                stroke-width="4" stroke="#1e2d7d"
+                                                                                fill="none" fill-rule="evenodd">
+                                                                                <circle stroke-linecap="square" cx="34"
+                                                                                    cy="60" r="6"></circle>
+                                                                                <circle stroke-linecap="square" cx="67"
+                                                                                    cy="60" r="6"></circle>
+                                                                                <path
+                                                                                    d="M22.9360352 15h54.8070373l-4.3391876 30H30.3387146L19.6676025 0H.99560547">
+                                                                                </path>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </div>
+                                                                    Hiện chưa có sản phẩm
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="cart-view-total">
+                                                    <table class="table-total">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-left">TỔNG TIỀN:</td>
+                                                                <td class="text-right" id="total-view-cart">0₫</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="/cart" class="linktocart button dark">Xem
+                                                                        giỏ hàng</a></td>
+                                                                <td><a href="/checkout"
+                                                                        class="linktocheckout button dark">Thanh
+                                                                        toán</a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-search-mobile search-bar-mobile">
+            <div class="search-box wpo-wrapper-search">
+                <form action="/search" class="searchform searchform-categoris ultimate-search">
+                    <div class="wpo-search-inner">
+                        <input type="hidden" name="type" value="product">
+                        <input required="" id="inputSearchAuto-mb" name="q" maxlength="40" autocomplete="off"
+                            class="searchinput input-search search-input" type="text" size="20"
+                            placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                        <span class="close-search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                </path>
+                            </svg></span>
+                    </div>
+                    <button type="submit" class="btn-search btn" id="search-header-btn-mb" aria-label="Tìm kiếm">
+                        <svg version="1.1" class="svg search" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27"
+                            style="enable-background:new 0 0 24 27;" xml:space="preserve">
+                            <path
+                                d="M10,2C4.5,2,0,6.5,0,12s4.5,10,10,10s10-4.5,10-10S15.5,2,10,2z M10,19c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S13.9,19,10,19z">
+                            </path>
+                            <rect x="17" y="17" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2844 19.5856)"
+                                width="4" height="8"></rect>
+                        </svg>
+                    </button>
+                </form>
+                <div id="ajaxSearchResults-mb" class="smart-search-wrapper ajaxSearchResults" style="display: none">
+                    <div class="resultsContent"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main content-->
+
+    <main class="mainContent-theme ">
+
+        <div id="product" class="productDetail-page">
+            <div class="breadcrumb-shop">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5  ">
+                            <ol class="breadcrumb breadcrumb-arrows" itemscope=""
+                                itemtype="http://schema.org/BreadcrumbList">
+                                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                    <a href="/" target="_self" itemprop="item"><span itemprop="name">Trang
+                                            chủ</span></a>
+                                    <meta itemprop="position" content="1">
+                                </li>
+
+
+
+                                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                    <a href="./cac-khoa-hoc.html" target="_self" itemprop="item">
+                                        <span itemprop="name">CÁC KHÓA HỌC</span>
+                                    </a>
+                                    <meta itemprop="position" content="2">
+                                </li>
+
+                                <li class="active" itemprop="itemListElement" itemscope=""
+                                    itemtype="http://schema.org/ListItem">
+                                    <span itemprop="item" content="./gv-ban-ngu.html">
+                                        <span itemprop="name">GIAO TIẾP 1-1 VỚI GIÁO VIÊN BẢN NGỮ</span>
+                                    </span>
+                                    <meta itemprop="position" content="3">
+                                </li>
+
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row product-detail-main pr_style_01">
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+
+
+                                    <div class="product-gallery">
+                                        <div class="product-gallery__thumbs-container hidden-sm hidden-xs">
+                                            <div class="product-gallery__thumbs thumb-fix">
+
+                                                <div class="product-gallery__thumb active">
+                                                    <a class="product-gallery__thumb-placeholder"
+                                                        href="javascript:void(0);"
+                                                        data-image="./img/gv_ban_ngu_a713bb16f3e2409aac139d46ebb8fbd3_master.png"
+                                                        data-zoom-image="./img/gv_ban_ngu_a713bb16f3e2409aac139d46ebb8fbd3_master.png">
+                                                        <img alt=" GIAO TIẾP 1-1 VỚI GIÁO VIÊN BẢN NGỮ "
+                                                            src="./img/gv_ban_ngu_a713bb16f3e2409aac139d46ebb8fbd3_compact.png"
+                                                            data-image="./img/gv_ban_ngu_a713bb16f3e2409aac139d46ebb8fbd3_master.png">
+                                                    </a>
+                                                </div>
+
+                                                <div class="product-gallery__thumb">
+                                                    <a class="product-gallery__thumb-placeholder"
+                                                        href="javascript:void(0);"
+                                                        data-image="./img/gv_ban_ngu_2_1977417845944f47978af6bfc2bf2239_master.png"
+                                                        data-zoom-image="./img/gv_ban_ngu_2_1977417845944f47978af6bfc2bf2239_master.png">
+                                                        <img alt=" GIAO TIẾP 1-1 VỚI GIÁO VIÊN BẢN NGỮ "
+                                                            src="./img/gv_ban_ngu_2_1977417845944f47978af6bfc2bf2239_compact.png"
+                                                            data-image="./img/gv_ban_ngu_2_1977417845944f47978af6bfc2bf2239_master.png">
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-image-detail box__product-gallery scroll">
+                                            <ul id="sliderproduct" class="site-box-content slide_product">
+
+                                                <li class="product-gallery-item gallery-item current">
+                                                    <img class="product-image-feature"
+                                                        src="./img/gv_ban_ngu_a713bb16f3e2409aac139d46ebb8fbd3_master.png"
+                                                        alt=" GIAO TIẾP 1-1 VỚI GIÁO VIÊN BẢN NGỮ ">
+                                                </li>
+
+                                                <li class="product-gallery-item gallery-item">
+                                                    <img class="product-image-feature"
+                                                        src="./img/gv_ban_ngu_2_1977417845944f47978af6bfc2bf2239_master.png"
+                                                        alt=" GIAO TIẾP 1-1 VỚI GIÁO VIÊN BẢN NGỮ ">
+                                                </li>
+
+                                            </ul>
+                                            <div class="product-image__button">
+                                                <div id="product-zoom-in" class="product-zoom icon-pr-fix "
+                                                    aria-label="Zoom in" title="Zoom in">
+                                                    <span class="zoom-in" aria-hidden="true">
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 36 36"
+                                                            style="enable-background:new 0 0 36 36; width: 30px; height: 30px;"
+                                                            xml:space="preserve">
+                                                            <polyline points="6,14 9,11 14,16 16,14 11,9 14,6 6,6 ">
+                                                            </polyline>
+                                                            <polyline points="22,6 25,9 20,14 22,16 27,11 30,14 30,6 ">
+                                                            </polyline>
+                                                            <polyline
+                                                                points="30,22 27,25 22,20 20,22 25,27 22,30 30,30 ">
+                                                            </polyline>
+                                                            <polyline points="14,30 11,27 16,22 14,20 9,25 6,22 6,30 ">
+                                                            </polyline>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="gallery-index icon-pr-fix"><span class="current">1</span> /
+                                                    <span class="total">2</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-xs-12 product-content-desc" id="detail-product">
+                                    <div class="product-title">
+                                        <h1>GIAO TIẾP 1-1 VỚI GIÁO VIÊN BẢN NGỮ</h1>
+
+
+                                    </div>
+                                    <!-- <div class="product-price" id="price-preview"><span class="pro-price">Liên hệ</span>
+                                    </div> -->
+
+
+                                    <!-- <form id="add-item-form" action="/cart/add" method="post" class="variants clearfix">
+                                        <div class="select clearfix">
+                                            <div class="selector-wrapper"><label for="product-select-option-0">Thời gian
+                                                    khóa học</label><span
+                                                    class="custom-dropdown custom-dropdown--white"><select
+                                                        class="single-option-selector custom-dropdown__select custom-dropdown__select--white"
+                                                        data-option="option1" id="product-select-option-0">
+                                                        <option value="10 Buổi">10 Buổi</option>
+                                                        <option value="20 Buổi">20 Buổi</option>
+                                                        <option value="40 Buổi">40 Buổi</option>
+                                                        <option value="80 Buổi">80 Buổi</option>
+                                                        <option value="120 buổi">120 buổi</option>
+                                                    </select></span></div>
+                                            <div class="selector-wrapper"><label for="product-select-option-1">Thời gian
+                                                    / buổi học</label><span
+                                                    class="custom-dropdown custom-dropdown--white"><select
+                                                        class="single-option-selector custom-dropdown__select custom-dropdown__select--white"
+                                                        data-option="option2" id="product-select-option-1">
+                                                        <option value="25 phút">25 phút</option>
+                                                    </select></span></div><select id="product-select" name="id"
+                                                style="display:none;">
+
+                                                <option value="1075165368">10 Buổi / 25 phút - 0₫</option>
+
+                                                <option value="1075165369">20 Buổi / 25 phút - 0₫</option>
+
+                                                <option value="1075168673">40 Buổi / 25 phút - 0₫</option>
+
+                                                <option value="1075168716">80 Buổi / 25 phút - 0₫</option>
+
+                                                <option value="1075168722">120 buổi / 25 phút - 0₫</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="select-swatch clearfix">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <div id="variant-swatch-0" class="swatch clearfix" data-option="option1"
+                                                data-option-index="0">
+                                                <div class="header hide">Thời gian khóa học:</div>
+
+                                                <div class="select-swap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <div data-value="10 Buổi" class="n-sd swatch-element 10-buoi  ">
+                                                        <input class="variant-0" id="swatch-0-10-buoi" type="radio"
+                                                            name="option1" value="10 Buổi" data-vhandle="10-buoi"
+                                                            checked="">
+
+                                                        <label for="swatch-0-10-buoi" class="sd">
+                                                            <span>10 Buổi</span>
+                                                        </label>
+
+                                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <div data-value="20 Buổi" class="n-sd swatch-element 20-buoi  ">
+                                                        <input class="variant-0" id="swatch-0-20-buoi" type="radio"
+                                                            name="option1" value="20 Buổi" data-vhandle="20-buoi">
+
+                                                        <label for="swatch-0-20-buoi">
+                                                            <span>20 Buổi</span>
+                                                        </label>
+
+                                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <div data-value="40 Buổi" class="n-sd swatch-element 40-buoi  ">
+                                                        <input class="variant-0" id="swatch-0-40-buoi" type="radio"
+                                                            name="option1" value="40 Buổi" data-vhandle="40-buoi">
+
+                                                        <label for="swatch-0-40-buoi">
+                                                            <span>40 Buổi</span>
+                                                        </label>
+
+                                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <div data-value="80 Buổi" class="n-sd swatch-element 80-buoi  ">
+                                                        <input class="variant-0" id="swatch-0-80-buoi" type="radio"
+                                                            name="option1" value="80 Buổi" data-vhandle="80-buoi">
+
+                                                        <label for="swatch-0-80-buoi">
+                                                            <span>80 Buổi</span>
+                                                        </label>
+
+                                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <div data-value="120 buổi" class="n-sd swatch-element 120-buoi  ">
+                                                        <input class="variant-0" id="swatch-0-120-buoi" type="radio"
+                                                            name="option1" value="120 buổi" data-vhandle="120-buoi">
+
+                                                        <label for="swatch-0-120-buoi">
+                                                            <span>120 buổi</span>
+                                                        </label>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <div id="variant-swatch-1" class="swatch clearfix" data-option="option2"
+                                                data-option-index="1">
+                                                <div class="header hide">Thời gian / buổi học:</div>
+
+                                                <div class="select-swap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <div data-value="25 phút" class="n-sd swatch-element 25-phut">
+                                                        <input class="variant-1" id="swatch-1-25-phut" type="radio"
+                                                            name="option2" value="25 phút" data-vhandle="25-phut"
+                                                            checked="">
+
+                                                        <label for="swatch-1-25-phut" class="sd">
+                                                            <span>25 phút</span>
+                                                        </label>
+
+                                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                        </div>
+                                        <div class="selector-actions">
+
+                                            <div class="quantity-area clearfix">
+                                                <input type="button" value="-" onclick="minusQuantity()"
+                                                    class="qty-btn">
+                                                <input type="text" id="quantity" name="quantity" value="1" min="1"
+                                                    class="quantity-selector">
+                                                <input type="button" value="+" onclick="plusQuantity()" class="qty-btn">
+                                            </div>
+                                            <div class="wrap-addcart clearfix">
+                                                <button type="button" id="add-to-cart"
+                                                    class="add-to-cartProduct button dark btn-addtocart addtocart-modal"
+                                                    name="add">Thêm vào giỏ</button>
+                                                <button type="button" id="buy-now"
+                                                    class="add-to-cartProduct button dark btn-addtocart addtocart-modal hidden"
+                                                    name="add" style="display: inline-block;">Mua ngay</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-action-bottom visible-xs">
+                                            <div class="input-bottom">
+                                                <input id="quan-input" type="number" value="1" min="1">
+                                            </div>
+                                            <button type="button" id="add-to-cartbottom"
+                                                class="add-to-cartProduct add-cart-bottom button dark addtocart-modal"
+                                                name="add">Thêm vào giỏ</button>
+                                        </div>
+                                    </form> -->
+                                    <div class="product-description">
+                                        <div class="title-bl">
+                                            <h2>Mô tả</h2>
+                                        </div>
+                                        <div class="description-content">
+                                            <div class="description-productdetail">
+                                                <p><strong>Giao tiếp 1-1 với giáo viên bản ngữ: </strong>là những giáo
+                                                    viên thuộc những quốc gia có Tiếng Anh là ngôn ngữ chính như Anh,
+                                                    Mỹ, Canada, Australia.&nbsp;100% Giáo viên được tuyển dụng khắt khe,
+                                                    có khinh nghiệm nhiều năm dạy học&nbsp;Tiếng Anh.</p>
+                                                <p>Trương trình học được thiết kế nhiều cấp độ cho mọi Học viên từ Mẫu
+                                                    giáo, tiểu học cho tới Đại học hay người đi làm muốn cải thiện kỹ
+                                                    năng giao tiếp tiếng Anh trong các ngữ cảnh khác nhau.</p>
+                                                <p>Chương trình có thể được thực hiện trên một loạt các thiết bị khác
+                                                    nhau như Máy vi tính, Máy tính bảng, Điện thoại thông minh, cho phép
+                                                    học viên học dễ dàng mọi lúc mọi nơi.</p>
+                                                <p><strong>Thời lượng học:</strong>&nbsp;25 phút (online); 45 phút
+                                                    (online).</p>
+                                                <p>Số buổi học: 10 buổi, 20 buổi, 40 buổi, 80 buổi, 120 buổi.</p>
+                                                <p><strong>Nội dung chính:</strong> Luyện phát âm chuẩn, luyện từ mới,
+                                                    giao tiếp một cách tự nhiên và chủ động.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-productRelated clearfix">
+                                <div class="heading-title text-center">
+                                    <h2>Những Khóa học khác</h2>
+                                </div>
+
+
+
+
+
+
+
+
+                                <div class="content-product-list row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="product-block product-resize fixheight" style="height: 208px;">
+                                            <div class="product-img ">
+
+
+
+                                                <a href="./gv-phil.html" title="GIAO TIẾP 1-1 VỚI GIÁO VIÊN PHILIPPINE"
+                                                    class="image-resize ratiobox lazyloaded" style="height: 124px;"
+                                                    data-expand="-1">
+                                                    <picture>
+                                                        <source media="(max-width: 480px)"
+                                                            data-srcset="./img/gv_phil_4fd69195bca7478e87149fc1f890d8c7_medium.png"
+                                                            srcset="./img/gv_phil_4fd69195bca7478e87149fc1f890d8c7_medium.png"
+                                                            sizes="186px">
+                                                        <source media="(min-width: 481px) and (max-width: 767px)"
+                                                            data-srcset="./img/gv_phil_4fd69195bca7478e87149fc1f890d8c7_medium.png"
+                                                            srcset="./img/gv_phil_4fd69195bca7478e87149fc1f890d8c7_medium.png"
+                                                            sizes="186px">
+                                                        <source media="(min-width: 768px)"
+                                                            data-srcset="./img/gv_phil_4fd69195bca7478e87149fc1f890d8c7_grande.png"
+                                                            srcset="./img/gv_phil_4fd69195bca7478e87149fc1f890d8c7_grande.png"
+                                                            sizes="186px">
+                                                        <img class="img-loop lazyautosizes ls-is-cached lazyloaded"
+                                                            data-sizes="auto"
+                                                            data-src="./img/gv_phil_4fd69195bca7478e87149fc1f890d8c7_grande.png"
+                                                            data-lowsrc="./img/gv_phil_4fd69195bca7478e87149fc1f890d8c7_grande.png"
+                                                            src="./img/gv_phil_4fd69195bca7478e87149fc1f890d8c7_grande.png"
+                                                            alt=" GIAO TIẾP 1-1 VỚI GIÁO VIÊN PHILIPPINE "
+                                                            sizes="186px">
+                                                    </picture>
+                                                    <picture>
+                                                        <source media="(max-width: 480px)"
+                                                            data-srcset="./img/gv_phil_2_38927a8d9598470fbaa8853e83665379_medium.png"
+                                                            srcset="./img/gv_phil_2_38927a8d9598470fbaa8853e83665379_medium.png">
+                                                        <source media="(min-width: 481px) and (max-width: 767px)"
+                                                            data-srcset="./img/gv_phil_2_38927a8d9598470fbaa8853e83665379_medium.png"
+                                                            srcset="./img/gv_phil_2_38927a8d9598470fbaa8853e83665379_medium.png">
+                                                        <source media="(min-width: 768px)"
+                                                            data-srcset="./img/gv_phil_2_38927a8d9598470fbaa8853e83665379_grande.png"
+                                                            srcset="./img/gv_phil_2_38927a8d9598470fbaa8853e83665379_grande.png">
+                                                        <img class="img-loop img-hover ls-is-cached lazyloaded"
+                                                            data-src="./img/gv_phil_2_38927a8d9598470fbaa8853e83665379_grande.png"
+                                                            src="./img/gv_phil_2_38927a8d9598470fbaa8853e83665379_grande.png"
+                                                            alt=" GIAO TIẾP 1-1 VỚI GIÁO VIÊN PHILIPPINE ">
+                                                    </picture>
+                                                </a>
+                                                <div class="button-add hidden">
+                                                    <button type="submit" title="Buy now" class="action"
+                                                        onclick="buy_now('1075169636')">Mua ngay<i
+                                                            class="fa fa-long-arrow-right"></i></button>
+                                                </div>
+                                                <div class="pro-price-mb">
+                                                    <span class="pro-price">0₫</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-detail clearfix">
+                                                <div class="box-pro-detail">
+                                                    <h3 class="pro-name">
+                                                        <a href="./gv-phil.html"
+                                                            title="GIAO TIẾP 1-1 VỚI GIÁO VIÊN PHILIPPINE">
+                                                            GIAO TIẾP 1-1 VỚI GIÁO VIÊN PHILIPPINE
+                                                        </a>
+                                                    </h3>
+                                                    <div class="box-pro-prices">
+                                                        <p class="pro-price ">
+
+
+                                                            <span>Liên hệ</span>
+
+
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+
+
+
+                                    <div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="product-block product-resize fixheight" style="height: 208px;">
+                                            <div class="product-img ">
+
+
+
+                                                <a href="./gv-viet-nam.html"
+                                                    title="GIAO TIẾP 1-1 VỚI GIÁO VIÊN VIỆT NAM"
+                                                    class="image-resize ratiobox lazyloaded" data-expand="-1"
+                                                    style="height: 124px;">
+                                                    <picture>
+                                                        <source media="(max-width: 480px)"
+                                                            data-srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_master.jpg"
+                                                            srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_master.jpg"
+                                                            sizes="186px">
+                                                        <source media="(min-width: 481px) and (max-width: 767px)"
+                                                            data-srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_master.jpg"
+                                                            srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_master.jpg"
+                                                            sizes="186px">
+                                                        <source media="(min-width: 768px)"
+                                                            data-srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_grande.jpg"
+                                                            srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_grande.jpg"
+                                                            sizes="186px">
+                                                        <img class="img-loop lazyautosizes ls-is-cached lazyloaded"
+                                                            data-sizes="auto"
+                                                            data-src="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_grande.jpg"
+                                                            data-lowsrc="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_grande.jpg"
+                                                            src="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_grande.jpg"
+                                                            alt=" GIAO TIẾP 1-1 VỚI GIÁO VIÊN VIỆT NAM " sizes="186px">
+                                                    </picture>
+                                                    <picture>
+                                                        <source media="(max-width: 480px)"
+                                                            data-srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_medium.jpg"
+                                                            srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_medium.jpg">
+                                                        <source media="(min-width: 481px) and (max-width: 767px)"
+                                                            data-srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_medium.jpg"
+                                                            srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_medium.jpg">
+                                                        <source media="(min-width: 768px)"
+                                                            data-srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_grande.jpg"
+                                                            srcset="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_grande.jpg">
+                                                        <img class="img-loop img-hover ls-is-cached lazyloaded"
+                                                            data-src="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_grande.jpg"
+                                                            src="./img/gv_vn_a1c403c93efd4aafa907cefdfc8503d6_dbe491b60bc54cb3a0363bc1ed47c562_grande.jpg"
+                                                            alt=" GIAO TIẾP 1-1 VỚI GIÁO VIÊN VIỆT NAM ">
+                                                    </picture>
+                                                </a>
+                                                <div class="button-add hidden">
+                                                    <button type="submit" title="Buy now" class="action"
+                                                        onclick="buy_now('1075168947')">Mua ngay<i
+                                                            class="fa fa-long-arrow-right"></i></button>
+                                                </div>
+                                                <div class="pro-price-mb">
+                                                    <span class="pro-price">0₫</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-detail clearfix">
+                                                <div class="box-pro-detail">
+                                                    <h3 class="pro-name">
+                                                        <a href="./gv-viet-nam.html"
+                                                            title="GIAO TIẾP 1-1 VỚI GIÁO VIÊN VIỆT NAM">
+                                                            GIAO TIẾP 1-1 VỚI GIÁO VIÊN VIỆT NAM
+                                                        </a>
+                                                    </h3>
+                                                    <div class="box-pro-prices">
+                                                        <p class="pro-price ">
+
+
+                                                            <span>Liên hệ</span>
+
+
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="divzoom">
+            <div class="divzoom_main">
+                <div class="product-thumb text-center">
+                    <img class="product-image-feature"
+                        src="./img/gv_ban_ngu_a713bb16f3e2409aac139d46ebb8fbd3_master.png"
+                        alt=" GIAO TIẾP 1-1 VỚI GIÁO VIÊN BẢN NGỮ ">
+                </div>
+                <div class="product-thumb text-center">
+                    <img class="product-image-feature"
+                        src="./img/gv_ban_ngu_2_1977417845944f47978af6bfc2bf2239_master.png"
+                        alt=" GIAO TIẾP 1-1 VỚI GIÁO VIÊN BẢN NGỮ ">
+                </div>
+            </div>
+            <div id="positionButtonDiv" class="hidden">
+                <p>
+                    <span>
+                        <button type="button" class="buttonZoomIn"><i></i></button>
+                        <button type="button" class="buttonZoomOut"><i></i></button>
+                    </span>
+                </p>
+            </div>
+            <button id="closedivZoom"><i></i></button>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('#add-to-cart').click(function (e) {
+                    e.preventDefault();
+                    $(this).addClass('clicked_buy');
+                    add_item_show_modalCart($('#product-select').val());
+                    //getCartModal();
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('#add-to-cartbottom').click(function () {
+                    $('#add-to-cart').trigger('click');
+                });
+                $('#quan-input').keyup(function () {
+                    $('[name="quantity"]').val($(this).val());
+                })
+                $('[name="quantity"]').on('keyup change', function () {
+                    $('#quan-input').val($(this).val());
+                })
+            });
+            $(document).on("click", "#product-zoom-in", function () {
+                //	var indexThumb = $(this).index();
+                $("body").addClass("open_layer");
+                $("#divzoom").css({ 'opcaity': 0, 'visibility': 'hidden' }).show();
+                $('.divzoom_main').flickity({
+                    resize: true,
+                    draggable: true,
+                });
+                if ($(window).width() > 768) {
+                    var ncurrent = parseInt($(".gallery-index .current").html()) - 1;
+                }
+                else {
+                    var ncurrent = parseInt($(".product-gallery-item.is-selected").index());
+                }
+                $('.divzoom_main').flickity('select', ncurrent);
+                setTimeout(function () { $("#divzoom").css({ 'opcaity': 1, 'visibility': 'visible' }) }, 50);
+            });
+            $(document).on('click', '#closedivZoom', function (event) {
+                $("#divzoom").hide();
+                $("body").removeClass("open_layer");
+                $('.divzoom_main').flickity('select', 0);
+                //$('.divzoom_main').slick('unslick');
+            });
+        </script>
+        <script>
+            $(".product-gallery__thumb img").click(function () {
+                $(".product-gallery__thumb").removeClass('active');
+                $(this).parents('.product-gallery__thumb').addClass('active');
+                var img_thumb = $(this).data('image');
+                var total_index = $(this).parents('.product-gallery__thumb').index() + 1;
+                $(".gallery-index .current").html(total_index);
+
+                $('html, body').animate({
+                    scrollTop: $("#sliderproduct img[src='" + img_thumb + "']").offset().top
+                }, 1000);
+
+
+            });
+            $(".product-gallery__thumb").first().addClass('active');
+            var check_variant = true;
+            var fIndex = false;
+            var selectCallback = function (variant, selector) {
+                if (variant && variant.available) {
+                    if (variant.featured_image != null) {
+                        if ($(window).width() > 991) {
+
+                            var temp = $("#sliderproduct .product-gallery-item:eq(0) img").attr("src");
+                            var imgVariant = Haravan.resizeImage(variant.featured_image.src, 'master').replace('https:', '');
+                            var indexVariant = $(".product-gallery-item img[src='" + Haravan.resizeImage(variant.featured_image.src, 'master').replace('https:', '') + "']").parent().index();
+                            $(".product-gallery-item:eq(0) img").attr("src", imgVariant);//Thế vị trí hình đầu tiên sau khi change
+                            $(".product-gallery-item:eq(" + indexVariant + ") img").attr("src", temp);
+                            $(".product-thumb:eq(0) img").attr("src", imgVariant);//Thế vị trí hình đầu tiên sau khi change
+                            $(".product-thumb:eq(" + indexVariant + ") img").attr("src", temp);
+
+                        }
+                        else {
+                            setTimeout(function () {
+                                var indexVariant = $(".product-gallery-item img[src='" + Haravan.resizeImage(variant.featured_image.src, 'master').replace('https:', '') + "']").parent().index();
+                                $("#sliderproduct").flickity('select', indexVariant);
+                            }, 500);
+                        }
+
+                    }
+                    if (variant.sku != null) {
+                        jQuery('#pro_sku').html('SKU: ' + variant.sku);
+                    }
+                    jQuery('#detail-product .add-to-cartProduct').removeAttr('disabled').removeClass('disabled').html("Thêm vào giỏ");
+
+
+                    jQuery('#detail-product #buy-now').removeAttr('disabled').removeClass('disabled').html("Mua ngay").show();
+                    jQuery('#detail-product .pro-soldold').addClass('hidden')
+
+                    if (variant.price == 0) {
+                        jQuery('#detail-product #price-preview').html("<span class='pro-price'>Liên hệ</span>");
+                        jQuery('#detail-product .price-fixed-mb').html("<span class='pro-price'>Liên hệ</span>");
+                    } else {
+                        if (variant.price < variant.compare_at_price) {
+                            //jQuery('#price-preview').html("<span>" + Haravan.formatMoney(variant.price, "{{amount}}₫") + "</span><del>" + Haravan.formatMoney(variant.compare_at_price, "{{amount}}₫") + "</del>");
+                            var pro_sold = variant.price;
+                            var pro_comp = variant.compare_at_price / 100;
+                            var sale = 100 - (pro_sold / pro_comp);
+                            var kq_sale = Math.round(sale);
+                            var html = '<span class="pro-sale">-' + kq_sale + '%</span>';
+                            html += '<span class="pro-price">' + Haravan.formatMoney(pro_sold, "{{amount}}₫") + '</span>';
+                            html += '<del>' + Haravan.formatMoney(variant.compare_at_price, "{{amount}}₫") + '</del>';
+                            jQuery('#detail-product #price-preview').html(html);
+                            jQuery('#detail-product .price-fixed-mb').html(html);
+                        } else {
+                            jQuery('#detail-product #price-preview').html("<span class='pro-price'>" + Haravan.formatMoney(variant.price, "{{amount}}₫" + "</span>"));
+                            jQuery('#detail-product .price-fixed-mb').html("<span class='pro-price'>" + Haravan.formatMoney(variant.price, "{{amount}}₫" + "</span>"));
+                        }
+                    }
+                    check_variant = true;
+                } else {
+                    jQuery('#detail-product .add-to-cartProduct').addClass('disabled').attr('disabled', 'disabled').html("Hết hàng");
+
+                    jQuery('#detail-product #buy-now').addClass('disabled').attr('disabled', 'disabled').html("Hết hàng").hide();
+                    var message = variant ? "Hết hàng" : "Không có hàng";
+                    jQuery('#detail-product .pro-soldold').removeClass('hidden')
+                    jQuery('#detail-product .pro-soldold').text(message);
+                    check_variant = false;
+                }
+                return check_variant;
+            };
+            jQuery(document).ready(function ($) {
+
+                new Haravan.OptionSelectors("product-select", { product: { "available": true, "compare_at_price_max": 0.0, "compare_at_price_min": 0.0, "compare_at_price_varies": false, "compare_at_price": 0.0, "content": null, "description": "<p><strong>Giao tiếp 1-1 với giáo viên bản ngữ: </strong>là những giáo viên thuộc những quốc gia có Tiếng Anh là ngôn ngữ chính như Anh, Mỹ, Canada, Australia.&nbsp;100% Giáo viên được tuyển dụng khắt khe, có khinh nghiệm nhiều năm dạy học&nbsp;Tiếng Anh.</p><p>Trương trình học được thiết kế nhiều cấp độ cho mọi Học viên từ Mẫu giáo, tiểu học cho tới Đại học hay người đi làm muốn cải thiện kỹ năng giao tiếp tiếng Anh trong các ngữ cảnh khác nhau.</p><p>Chương trình có thể được thực hiện trên một loạt các thiết bị khác nhau như Máy vi tính, Máy tính bảng, Điện thoại thông minh, cho phép học viên học dễ dàng mọi lúc mọi nơi.</p><p><strong>Thời lượng học:</strong>&nbsp;25 phút (online); 45 phút (online).</p><p>Số buổi học: 10 buổi, 20 buổi, 40 buổi, 80 buổi, 120 buổi.</p><p><strong>Nội dung chính:</strong> Luyện phát âm chuẩn, luyện từ mới, giao tiếp một cách tự nhiên và chủ động.</p>", "featured_image": "https:./img/gv_ban_ngu_a713bb16f3e2409aac139d46ebb8fbd3.png", "handle": "gv-ban-ngu", "id": 1034112779, "images": ["https:./img/gv_ban_ngu_a713bb16f3e2409aac139d46ebb8fbd3.png", "https:./img/gv_ban_ngu_2_1977417845944f47978af6bfc2bf2239.png"], "options": ["Thời gian khóa học", "Thời gian / buổi học"], "price": 0.0, "price_max": 0.0, "price_min": 0.0, "price_varies": false, "tags": [], "template_suffix": null, "title": "GIAO TIẾP 1-1 VỚI GIÁO VIÊN BẢN NGỮ", "type": "Khác", "url": "/products/gv-ban-ngu", "pagetitle": "GIAO TIẾP 1-1 VỚI GIÁO VIÊN BẢN NGỮ", "metadescription": "Giao tiếp 1-1 với giáo viên bản ngữ: là những giáo viên thuộc những quốc gia có Tiếng Anh là ngôn ngữ chính như Anh, Mỹ, Canada, Australia. 100% Giáo viên được tuyển dụng khắt khe, có khinh nghiệm nhiều năm dạy học Tiếng Anh", "variants": [{ "id": 1075165368, "barcode": null, "available": true, "price": 0.0, "sku": null, "option1": "10 Buổi", "option2": "25 phút", "option3": "", "options": ["10 Buổi", "25 phút"], "inventory_quantity": 1.0, "old_inventory_quantity": 1.0, "title": "10 Buổi / 25 phút", "weight": 0.0, "compare_at_price": 0.0, "inventory_management": null, "inventory_policy": "deny", "selected": false, "url": null, "featured_image": null }, { "id": 1075165369, "barcode": null, "available": true, "price": 0.0, "sku": null, "option1": "20 Buổi", "option2": "25 phút", "option3": "", "options": ["20 Buổi", "25 phút"], "inventory_quantity": 1.0, "old_inventory_quantity": 1.0, "title": "20 Buổi / 25 phút", "weight": 0.0, "compare_at_price": 0.0, "inventory_management": null, "inventory_policy": "deny", "selected": false, "url": null, "featured_image": null }, { "id": 1075168673, "barcode": null, "available": true, "price": 0.0, "sku": null, "option1": "40 Buổi", "option2": "25 phút", "option3": "", "options": ["40 Buổi", "25 phút"], "inventory_quantity": 1.0, "old_inventory_quantity": 1.0, "title": "40 Buổi / 25 phút", "weight": 0.0, "compare_at_price": 0.0, "inventory_management": null, "inventory_policy": "deny", "selected": false, "url": null, "featured_image": null }, { "id": 1075168716, "barcode": null, "available": true, "price": 0.0, "sku": null, "option1": "80 Buổi", "option2": "25 phút", "option3": "", "options": ["80 Buổi", "25 phút"], "inventory_quantity": 1.0, "old_inventory_quantity": 1.0, "title": "80 Buổi / 25 phút", "weight": 0.0, "compare_at_price": 0.0, "inventory_management": null, "inventory_policy": "deny", "selected": false, "url": null, "featured_image": null }, { "id": 1075168722, "barcode": null, "available": true, "price": 0.0, "sku": null, "option1": "120 buổi", "option2": "25 phút", "option3": "", "options": ["120 buổi", "25 phút"], "inventory_quantity": 1.0, "old_inventory_quantity": 1.0, "title": "120 buổi / 25 phút", "weight": 0.0, "compare_at_price": 0.0, "inventory_management": null, "inventory_policy": "deny", "selected": false, "url": null, "featured_image": null }], "vendor": "Khác", "published_at": "2021-07-01T07:41:19.072Z", "created_at": "2021-07-01T07:44:21.029Z", "not_allow_promotion": false }, onVariantSelected: selectCallback });
+
+                // Add label if only one product option and it isn't 'Title'.
+
+
+                // Auto-select first available variant on page load.
+
+
+
+
+
+                $('#detail-product .single-option-selector:eq(0)').val("10 Buổi").trigger('change');
+
+                $('#detail-product .single-option-selector:eq(1)').val("25 phút").trigger('change');
+
+
+
+
+
+
+
+
+
+
+
+                $('#detail-product .selector-wrapper select').each(function () {
+                    $(this).wrap('<span class="custom-dropdown custom-dropdown--white"></span>');
+                    $(this).addClass("custom-dropdown__select custom-dropdown__select--white");
+                });
+
+            });
+        </script>
+        <script>
+            var swatch_size = parseInt($('#add-item-form .select-swatch').children().size());
+            jQuery(document).on('click', '#add-item-form .swatch input', function (e) {
+                e.preventDefault();
+                var $this = $(this);
+                var _available = '';
+                $this.parent().siblings().find('label').removeClass('sd');
+                $this.next().addClass('sd');
+                var name = $this.attr('name');
+                var value = $this.val();
+                $('#add-item-form select[data-option=' + name + ']').val(value).trigger('change');
+                if (swatch_size == 2) {
+                    if (name.indexOf('1') != -1) {
+                        $('#add-item-form #variant-swatch-1 .swatch-element').find('input').prop('disabled', false);
+                        $('#add-item-form #variant-swatch-2 .swatch-element').find('input').prop('disabled', false);
+                        $('#add-item-form #variant-swatch-1 .swatch-element label').removeClass('sd');
+                        $('#add-item-form #variant-swatch-1 .swatch-element').removeClass('soldout');
+                        $('#add-item-form .selector-wrapper .single-option-selector').eq(1).find('option').each(function () {
+                            var _tam = $(this).val();
+                            $(this).parent().val(_tam).trigger('change');
+                            if (check_variant) {
+                                if (_available == '') {
+                                    _available = _tam;
+                                }
+                            } else {
+                                $('#add-item-form #variant-swatch-1 .swatch-element[data-value="' + _tam + '"]').addClass('soldout');
+                                $('#add-item-form #variant-swatch-1 .swatch-element[data-value="' + _tam + '"]').find('input').prop('disabled', true);
+                            }
+                        })
+                        $('#add-item-form .selector-wrapper .single-option-selector').eq(1).val(_available).trigger('change');
+                        $('#add-item-form #variant-swatch-1 .swatch-element[data-value="' + _available + '"] label').addClass('sd');
+                    }
+                }
+                else if (swatch_size == 3) {
+                    var _count_op2 = $('#add-item-form #variant-swatch-1 .swatch-element').size();
+                    var _count_op3 = $('#add-item-form #variant-swatch-2 .swatch-element').size();
+                    if (name.indexOf('1') != -1) {
+                        $('#add-item-form #variant-swatch-1 .swatch-element').find('input').prop('disabled', false);
+                        $('#add-item-form #variant-swatch-2 .swatch-element').find('input').prop('disabled', false);
+                        $('#add-item-form #variant-swatch-1 .swatch-element label').removeClass('sd');
+                        $('#add-item-form #variant-swatch-1 .swatch-element').removeClass('soldout');
+                        $('#add-item-form #variant-swatch-2 .swatch-element label').removeClass('sd');
+                        $('#add-item-form #variant-swatch-2 .swatch-element').removeClass('soldout');
+                        var _avi_op1 = '';
+                        var _avi_op2 = '';
+                        $('#add-item-form #variant-swatch-1 .swatch-element').each(function (ind, value) {
+                            var _key = $(this).data('value');
+                            var _unavi = 0;
+                            $('#add-item-form .single-option-selector').eq(1).val(_key).change();
+                            $('#add-item-form #variant-swatch-2 .swatch-element label').removeClass('sd');
+                            $('#add-item-form #variant-swatch-2 .swatch-element').removeClass('soldout');
+                            $('#add-item-form #variant-swatch-2 .swatch-element').find('input').prop('disabled', false);
+                            $('#add-item-form #variant-swatch-2 .swatch-element').each(function (i, v) {
+                                var _val = $(this).data('value');
+                                $('#add-item-form .single-option-selector').eq(2).val(_val).change();
+                                if (check_variant == true) {
+                                    if (_avi_op1 == '') {
+                                        _avi_op1 = _key;
+                                    }
+                                    if (_avi_op2 == '') {
+                                        _avi_op2 = _val;
+                                    }
+                                    //console.log(_avi_op1 + ' -- ' + _avi_op2)
+                                } else {
+                                    _unavi += 1;
+                                }
+                            })
+                            if (_unavi == _count_op3) {
+                                $('#add-item-form #variant-swatch-1 .swatch-element[data-value = "' + _key + '"]').addClass('soldout');
+                                setTimeout(function () {
+                                    $('#add-item-form #variant-swatch-1 .swatch-element[data-value = "' + _key + '"] input').attr('disabled', 'disabled');
+                                })
+                            }
+                        })
+                        $('#add-item-form #variant-swatch-1 .swatch-element[data-value="' + _avi_op1 + '"] input').click();
+                    }
+                    else if (name.indexOf('2') != -1) {
+                        $('#add-item-form #variant-swatch-2 .swatch-element label').removeClass('sd');
+                        $('#add-item-form #variant-swatch-2 .swatch-element').removeClass('soldout');
+                        $('#add-item-form .selector-wrapper .single-option-selector').eq(2).find('option').each(function () {
+                            var _tam = $(this).val();
+                            $(this).parent().val(_tam).trigger('change');
+                            if (check_variant) {
+                                if (_available == '') {
+                                    _available = _tam;
+                                }
+                            } else {
+                                $('#add-item-form #variant-swatch-2 .swatch-element[data-value="' + _tam + '"]').addClass('soldout');
+                                $('#add-item-form #variant-swatch-2 .swatch-element[data-value="' + _tam + '"]').find('input').prop('disabled', true);
+                            }
+                        })
+                        $('#add-item-form .selector-wrapper .single-option-selector').eq(2).val(_available).trigger('change');
+                        $('#add-item-form #variant-swatch-2 .swatch-element[data-value="' + _available + '"] label').addClass('sd');
+                    }
+                }
+                else {
+
+                }
+            })
+            $(document).ready(function () {
+                var _chage = '';
+                $('#add-item-form .swatch-element[data-value="' + $('#add-item-form .selector-wrapper .single-option-selector').eq(0).val() + '"]').find('input').click();
+                $('#add-item-form .swatch-element[data-value="' + $('#add-item-form .selector-wrapper .single-option-selector').eq(1).val() + '"]').find('input').click();
+                if (swatch_size == 2) {
+                    var _avi_op1 = '';
+                    var _avi_op2 = '';
+                    var _count = $('#add-item-form #variant-swatch-1 .swatch-element').size();
+                    $('#add-item-form #variant-swatch-0 .swatch-element').each(function (ind, value) {
+                        var _key = $(this).data('value');
+                        var _unavi = 0;
+                        $('#add-item-form .single-option-selector').eq(0).val(_key).change();
+                        $('#add-item-form #variant-swatch-1 .swatch-element').each(function (i, v) {
+                            var _val = $(this).data('value');
+                            $('#add-item-form .single-option-selector').eq(1).val(_val).change();
+                            if (check_variant == true) {
+                                if (_avi_op1 == '') {
+                                    _avi_op1 = _key;
+                                }
+                                if (_avi_op2 == '') {
+                                    _avi_op2 = _val;
+                                }
+                            } else {
+                                _unavi += 1;
+                            }
+                        })
+                        if (_unavi == _count) {
+                            $('#add-item-form #variant-swatch-0 .swatch-element[data-value = "' + _key + '"]').addClass('soldout');
+                            $('#add-item-form #variant-swatch-0 .swatch-element[data-value = "' + _key + '"]').find('input').attr('disabled', 'disabled');
+                        }
+                    })
+                    $('#add-item-form #variant-swatch-1 .swatch-element[data-value = "' + _avi_op2 + '"] input').click();
+                    $('#add-item-form #variant-swatch-0 .swatch-element[data-value = "' + _avi_op1 + '"] input').click();
+                }
+                else if (swatch_size == 3) {
+                    var _avi_op1 = '';
+                    var _avi_op2 = '';
+                    var _avi_op3 = '';
+                    var _size_op2 = $('#add-item-form #variant-swatch-1 .swatch-element').size();
+                    var _size_op3 = $('#add-item-form #variant-swatch-2 .swatch-element').size();
+
+                    $('#add-item-form #variant-swatch-0 .swatch-element').each(function (ind, value) {
+                        var _key_va1 = $(this).data('value');
+                        var _count_unavi = 0;
+                        $('#add-item-form .single-option-selector').eq(0).val(_key_va1).change();
+                        $('#add-item-form #variant-swatch-1 .swatch-element').each(function (i, v) {
+                            var _key_va2 = $(this).data('value');
+                            var _unavi_2 = 0;
+                            $('#add-item-form .single-option-selector').eq(1).val(_key_va2).change();
+                            $('#add-item-form #variant-swatch-2 .swatch-element').each(function (j, z) {
+                                var _key_va3 = $(this).data('value');
+                                $('#add-item-form .single-option-selector').eq(2).val(_key_va3).change();
+                                if (check_variant == true) {
+                                    if (_avi_op1 == '') {
+                                        _avi_op1 = _key_va1;
+                                    }
+                                    if (_avi_op2 == '') {
+                                        _avi_op2 = _key_va2;
+                                    }
+                                    if (_avi_op3 == '') {
+                                        _avi_op3 = _key_va3;
+                                    }
+                                } else {
+                                    _unavi_2 += 1;
+                                }
+                            })
+                            if (_unavi_2 == _size_op3) {
+                                _count_unavi += 1;
+                            }
+                        })
+                        if (_size_op2 == _count_unavi) {
+                            $('#add-item-form #variant-swatch-0 .swatch-element[data-value = "' + _key_va1 + '"]').addClass('soldout');
+                            $('#add-item-form #variant-swatch-0 .swatch-element[data-value = "' + _key_va1 + '"]').find('input').attr('disabled', 'disabled');
+                        }
+                    })
+                    $('#add-item-form #variant-swatch-0 .swatch-element[data-value = "' + _avi_op1 + '"] input').click();
+                }
+            });
+            $(document).ready(function () {
+                var vl = $('#add-item-form .swatch .color input').val();
+                $('#add-item-form .swatch .color input').parents(".swatch").find(".header span").html(vl);
+                $("#add-item-form .select-swap .color").hover(function () {
+                    var value = $(this).data("value");
+                    $(this).parents(".swatch").find(".header span").html(value);
+                }, function () {
+                    var value = $("#add-item-form .select-swap .color label.sd span").html();
+                    $(this).parents(".swatch").find(".header span").html(value);
+                });
+            });
+        </script>
+
+
+
+
+    </main>
+
+    <!-- footer -->
+
+    <footer class="footer  mainfooter-toolbar   ">
+
+        <!-- <div class="top-footer">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-8">
+                        <div class="area_newsletter">
+                            <div class="title_newsletter">
+                                <h4>Hãy để chúng tôi liên hệ bạn:</h4>
+                            </div>
+                            <div class="form_newsletter form_newsletter_customer">
+                                <form accept-charset="UTF-8" action="/account/contact" class="contact-form"
+                                    method="post">
+                                    <input name="form_type" type="hidden" value="customer">
+                                    <input name="utf8" type="hidden" value="✓">
+
+                                    <div class="input-group">
+                                        <input type="hidden" id="newsletter-tags" name="contact[tags]"
+                                            value="khách hàng tiềm năng, bản tin">
+                                        <input required="" type="email" id="newsletter-email" value=""
+                                            placeholder="Nhập email của bạn" name="contact[email]"
+                                            aria-label="Email Address">
+                                        <button type="submit" class="button dark">Đăng kí</button>
+                                    </div>
+                                    <div class="sitebox-recaptcha hidden">
+                                        This site is protected by reCAPTCHA and the Google
+                                        <a href="https://policies.google.com/privacy" target="_blank"
+                                            rel="noreferrer">Privacy Policy</a>
+                                        and <a href="https://policies.google.com/terms" target="_blank"
+                                            rel="noreferrer">Terms of Service</a> apply.
+                                    </div>
+
+
+
+                                    <input id="c5d043d904954e9cb8f00064f3701bf7" name="g-recaptcha-response"
+                                        type="hidden"
+                                        value="03ADUVZwAQq8XZL8kAnk45J8My_k_l4D1SfqNZtYvxslEYOQDQaYrSrTrhWxs4lA7yqlpRJvIfIhwIxeru-Ftpg9vgr34ZQ0c2r3M7OSu-F4G4-rtnuY3Jf6ppuyybmFt3lRdPvMo8XBv8_YYsNm0COf01FIP9bI2x7ORNLs37zXaHxr_uG5zQT8DGuw_8dwAFUtpPMl7wCxEJw96Qh39NBihjn0azDzbkV07pSW_-gIQu-CP4k1KCuuL_36vDZArCfSJ-j3gLQYaFfDyDpVNU-WM9EQD-C6wZawqp3r2vZmVxbZCRw4acg49-Y_sJJ-5kNdwyBoPX0Df8oCgnGlPipuPNnD0gjBujJpCNkbjYtyP7MMIRU_F8Za0YjjhP2QGhlC9jZHIAWmc3sA7K9EfrAlCMj9ftnaptBxWcrLCnVLuzEwkxuy_8SzRNIhC2MPWD_kO9zFJM-CfqrgBWiHr_SZAGMO_82QE6k1uvp1L6DPufVVsUfEzNYjmO9Rs-Ppv9bQhMH9Bh4TgzuILp6MDio66Bdoj47hWCuk0vYsmxMd_3x5CKJTKSxXoj8v4xJwdyYqaS0lAGTI6U">
+                                    <script
+                                        src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script>
+                                    <script>grecaptcha.ready(function () { grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', { action: 'submit' }).then(function (token) { document.getElementById('c5d043d904954e9cb8f00064f3701bf7').value = token; }); });</script>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <div class="area_phone_contact">
+                            <p class="number_phone">
+                                <i class="fa fa-phone "></i>
+                                <span>Hỗ trợ / Tư vấn:</span>
+                                <a href="tel:(+84) 932.0935.66">
+                                    (+84) 932.0935.66
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+
+        <div class="title-expand visible-xs text-center">
+            <a class="btn-fter" data-toggle="collapse" href="#fter-content" role="button" aria-expanded="true"
+                aria-controls="fter-content">
+                Thông tin khác<span class="fa fa-angle-down"> </span>
+            </a>
+        </div>
+        <div class="main-footer bg-active collapse in" id="fter-content">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg">
+                        <div class="footer-col footer-content1">
+                            <h4 class="footer-title">
+                                Giới thiệu
+                            </h4>
+                            <div class="footer-content">
+
+                                <p>Tiếng Anh giao tiếp 1-1 với người nước ngoài:
+                                    Chủ động - Hiệu quả</p>
+
+
+                                <div class="logo-footer">
+                                    <a href="./" target="_blank" rel="nofollow noreferrer">
+                                        <img src="./img/cay_tri_thuc_1_d5fa49f70a9b40b1b20896a4a43ff7bf.jpg"
+                                            alt="Bộ Công Thương">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-2 col-lg">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                Liên kết
+                            </h4>
+                            <div class="footer-content toggle-footer">
+                                <ul>
+
+                                    <li class="item">
+                                        <a href="./" title="Tìm kiếm">Tìm kiếm</a>
+                                    </li>
+
+                                    <li class="item">
+                                        <a href="./chinh-sach-bao-mat.html" title="Chính sách bảo mật">Chính sách bảo
+                                            mật</a>
+                                    </li>
+
+                                    <li class="item">
+                                        <a href="./dieu-khoan-dich-vu.html" title="Điều khoản dịch vụ">Điều khoản dịch
+                                            vụ</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg">
+                        <div class="footer-col">
+                            <h4 class="footer-title">
+                                Thông tin liên hệ
+                            </h4>
+                            <div class="footer-content footer-contact">
+                                <ul>
+                                    <li class="contact-1">Trụ sở chính: 27/36 Linh Quang, Văn Chương, Đống Đa, Hà Nội
+                                    </li>
+                                    <li class="contact-2">(+84) 932.0935.66</li>
+                                    <li class="contact-3"></li>
+                                    <li class="contact-4">activeenglish.edu.vn@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg">
+                        <div class="footer-col">
+                            <h4 class="footer-title">
+                                Fanpage
+                            </h4>
+                            <div class="footer-content footer-contact">
+                                <!-- Facebook widget -->
+                                <div class="footer-static-content">
+                                    <div class="fb-page fb_iframe_widget fb_iframe_widget_fluid"
+                                        data-href="https://www.facebook.com/Active-English-Speaking-Ti%E1%BA%BFng-Anh-online-1-1-giao-ti%E1%BA%BFp-ch%E1%BB%A7-%C4%91%E1%BB%99ng-hi%E1%BB%87u-qu%E1%BA%A3-106306758343475"
+                                        data-height="300" data-small-header="false" data-adapt-container-width="true"
+                                        data-hide-cover="false" data-show-facepile="true" data-show-posts="false"
+                                        fb-xfbml-state="rendered"
+                                        fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=264&amp;height=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FActive-English-Speaking-Ti%25E1%25BA%25BFng-Anh-online-1-1-giao-ti%25E1%25BA%25BFp-ch%25E1%25BB%25A7-%25C4%2591%25E1%25BB%2599ng-hi%25E1%25BB%2587u-qu%25E1%25BA%25A3-106306758343475&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=false">
+                                        <span style="vertical-align: bottom; width: 264px; height: 130px;"><iframe
+                                                name="f3f3345cb454f2" width="1000px" height="300px"
+                                                data-testid="fb:page Facebook Social Plugin"
+                                                title="fb:page Facebook Social Plugin" frameborder="0"
+                                                allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                                allow="encrypted-media"
+                                                src="https://www.facebook.com/v11.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df287520e41fc358%26domain%3Dactiveenglish.edu.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Factiveenglish.edu.vn%252Ff25b07f1b10dc48%26relation%3Dparent.parent&amp;container_width=264&amp;height=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FActive-English-Speaking-Ti%25E1%25BA%25BFng-Anh-online-1-1-giao-ti%25E1%25BA%25BFp-ch%25E1%25BB%25A7-%25C4%2591%25E1%25BB%2599ng-hi%25E1%25BB%2587u-qu%25E1%25BA%25A3-106306758343475&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=false"
+                                                style="border: none; visibility: visible; width: 264px; height: 130px;"
+                                                class=""></iframe></span>
+                                    </div>
+                                </div>
+                                <div style="clear:both;"></div>
+
+                                <!-- #Facebook widget -->
+                                <script>
+                                    setTimeout(function () {
+                                        (function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (d.getElementById(id)) return;
+                                            js = d.createElement(s); js.id = id;
+                                            js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.0";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }(document, 'script', 'facebook-jssdk'));
+                                    }, 5000);
+                                </script>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer text-center">
+            <div class="container-fluid">
+                <p>Copyright © 2023 <a href="./"> ActiveEnglish</a>. <a target="_blank" href="./">Powered
+                        by ActiveEnglish</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!----------------->
+
+    <!--Zalo email phone call-->
+
+    <div class="addThis_listSharing hidden-xs">
+        <ul class="addThis_listing">
+
+            <li class="addThis_item">
+                <a class="addThis_item--icon" href="tel:0975999839" rel="nofollow" aria-label="phone">
+                    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="22" fill="url(#paint2_linear)"></circle>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.0087 9.35552C14.1581 9.40663 14.3885 9.52591 14.5208 9.61114C15.3315 10.148 17.5888 13.0324 18.3271 14.4726C18.7495 15.2949 18.8903 15.9041 18.758 16.3558C18.6214 16.8415 18.3953 17.0971 17.384 17.9109C16.9786 18.239 16.5988 18.5756 16.5391 18.6651C16.3855 18.8866 16.2617 19.3212 16.2617 19.628C16.266 20.3395 16.7269 21.6305 17.3328 22.6232C17.8021 23.3944 18.6428 24.3828 19.4749 25.1413C20.452 26.0361 21.314 26.6453 22.2869 27.1268C23.5372 27.7488 24.301 27.9064 24.86 27.6466C25.0008 27.5826 25.1501 27.4974 25.1971 27.4591C25.2397 27.4208 25.5683 27.0202 25.9268 26.5772C26.618 25.7079 26.7759 25.5674 27.2496 25.4055C27.8513 25.201 28.4657 25.2563 29.0844 25.5716C29.5538 25.8145 30.5779 26.4493 31.2393 26.9095C32.1098 27.5187 33.9703 29.0355 34.2221 29.3381C34.6658 29.8834 34.7427 30.5821 34.4439 31.3534C34.1281 32.1671 32.8992 33.6925 32.0415 34.3444C31.2649 34.9323 30.7145 35.1581 29.9891 35.1922C29.3917 35.222 29.1442 35.1709 28.3804 34.8556C22.3893 32.3887 17.6059 28.7075 13.8081 23.65C11.8239 21.0084 10.3134 18.2688 9.28067 15.427C8.67905 13.7696 8.64921 13.0495 9.14413 12.2017C9.35753 11.8438 10.2664 10.9575 10.9278 10.4633C12.0288 9.64524 12.5365 9.34273 12.9419 9.25754C13.2193 9.19787 13.7014 9.24473 14.0087 9.35552Z"
+                            fill="white"></path>
+                        <defs>
+                            <linearGradient id="paint2_linear" x1="22" y1="-7.26346e-09" x2="22.1219" y2="40.5458"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="50%" stop-color="#e8434c"></stop>
+                                <stop offset="100%" stop-color="#d61114"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="tooltip-text">Gọi ngay cho chúng tôi</span>
+                </a>
+            </li>
+            <li class="addThis_item">
+                <a class="addThis_item--icon" href="//zalo.me/0932093566" target="_blank" rel="nofollow noreferrer"
+                    aria-label="zalo">
+                    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="22" fill="url(#paint4_linear)"></circle>
+                        <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.274 34.0907C15.7773 34.0856 16.2805 34.0804 16.783 34.0804C16.7806 34.0636 16.7769 34.0479 16.7722 34.0333C16.777 34.0477 16.7808 34.0632 16.7832 34.0798C16.8978 34.0798 17.0124 34.0854 17.127 34.0965H25.4058C26.0934 34.0965 26.7809 34.0977 27.4684 34.0989C28.8434 34.1014 30.2185 34.1039 31.5935 34.0965H31.6222C33.5357 34.0798 35.0712 32.5722 35.0597 30.7209V27.4784C35.0597 27.4582 35.0612 27.4333 35.0628 27.4071C35.0676 27.3257 35.0731 27.2325 35.0368 27.2345C34.9337 27.2401 34.7711 27.2757 34.7138 27.3311C34.2744 27.6145 33.8483 27.924 33.4222 28.2335C32.57 28.8525 31.7179 29.4715 30.7592 29.8817C27.0284 31.0993 23.7287 31.157 20.2265 30.3385C20.0349 30.271 19.9436 30.2786 19.7816 30.292C19.6773 30.3007 19.5436 30.3118 19.3347 30.3068C19.3093 30.3077 19.2829 30.3085 19.2554 30.3093C18.9099 30.3197 18.4083 30.3348 17.8088 30.6877C16.4051 31.1034 14.5013 31.157 13.5175 31.0147C13.522 31.0245 13.5247 31.0329 13.5269 31.0407C13.5236 31.0341 13.5204 31.0275 13.5173 31.0208C13.5036 31.0059 13.4864 30.9927 13.4696 30.98C13.4163 30.9393 13.3684 30.9028 13.46 30.8268C13.4867 30.8102 13.5135 30.7929 13.5402 30.7757C13.5937 30.7412 13.6472 30.7067 13.7006 30.6771C14.4512 30.206 15.1559 29.6905 15.6199 28.9311C16.2508 28.1911 15.9584 27.9025 15.4009 27.3524L15.3799 27.3317C12.6639 24.6504 11.8647 21.8054 12.148 17.9785C12.486 15.8778 13.4829 14.0708 14.921 12.4967C15.7918 11.5433 16.8288 10.7729 17.9632 10.1299C17.9796 10.1198 17.9987 10.1116 18.0182 10.1032C18.0736 10.0793 18.1324 10.0541 18.1408 9.98023C18.1475 9.92191 18.0507 9.90264 18.0163 9.90264C17.3698 9.90264 16.7316 9.89705 16.0964 9.89148C14.8346 9.88043 13.5845 9.86947 12.3041 9.90265C10.465 9.95254 8.78889 11.1779 8.81925 13.3614C8.82689 17.2194 8.82435 21.0749 8.8218 24.9296C8.82053 26.8567 8.81925 28.7835 8.81925 30.7104C8.81925 32.5007 10.2344 34.0028 12.085 34.0749C13.1465 34.1125 14.2107 34.1016 15.274 34.0907ZM13.5888 31.1403C13.5935 31.1467 13.5983 31.153 13.6032 31.1594C13.7036 31.2455 13.8031 31.3325 13.9021 31.4202C13.8063 31.3312 13.7072 31.2423 13.6035 31.1533C13.5982 31.1487 13.5933 31.1444 13.5888 31.1403ZM16.5336 33.8108C16.4979 33.7885 16.4634 33.7649 16.4337 33.7362C16.4311 33.7358 16.4283 33.7352 16.4254 33.7345C16.4281 33.7371 16.4308 33.7397 16.4335 33.7423C16.4632 33.7683 16.4978 33.79 16.5336 33.8108Z"
+                                fill="white"></path>
+                            <path
+                                d="M17.6768 21.6754C18.5419 21.6754 19.3555 21.6698 20.1633 21.6754C20.6159 21.6809 20.8623 21.8638 20.9081 22.213C20.9597 22.6509 20.6961 22.9447 20.2034 22.9502C19.2753 22.9613 18.3528 22.9558 17.4247 22.9558C17.1554 22.9558 16.8919 22.9669 16.6226 22.9502C16.2903 22.9336 15.9637 22.8671 15.8033 22.5345C15.6429 22.2019 15.7575 21.9026 15.9752 21.631C16.8575 20.5447 17.7455 19.4527 18.6336 18.3663C18.6851 18.2998 18.7367 18.2333 18.7883 18.1723C18.731 18.0781 18.6508 18.1224 18.582 18.1169C17.9633 18.1114 17.3388 18.1169 16.72 18.1114C16.5768 18.1114 16.4335 18.0947 16.296 18.067C15.9695 17.995 15.7689 17.679 15.8434 17.3686C15.895 17.158 16.0669 16.9862 16.2846 16.9363C16.4221 16.903 16.5653 16.8864 16.7085 16.8864C17.7284 16.8809 18.7539 16.8809 19.7737 16.8864C19.9571 16.8809 20.1347 16.903 20.3123 16.9474C20.7019 17.0749 20.868 17.4241 20.7133 17.7899C20.5758 18.1058 20.3581 18.3774 20.1404 18.649C19.3899 19.5747 18.6393 20.4948 17.8888 21.4093C17.8258 21.4814 17.7685 21.5534 17.6768 21.6754Z"
+                                fill="white"></path>
+                            <path
+                                d="M24.3229 18.7604C24.4604 18.5886 24.6036 18.4279 24.8385 18.3835C25.2911 18.2948 25.7151 18.5775 25.7208 19.021C25.738 20.1295 25.7323 21.2381 25.7208 22.3467C25.7208 22.6349 25.526 22.8899 25.2453 22.973C24.9588 23.0783 24.6322 22.9952 24.4432 22.7568C24.3458 22.6404 24.3057 22.6183 24.1682 22.7236C23.6468 23.1338 23.0567 23.2058 22.4207 23.0063C21.4009 22.6848 20.9827 21.9143 20.8681 20.9776C20.7478 19.9632 21.0973 19.0986 22.0369 18.5664C22.816 18.1175 23.6067 18.1563 24.3229 18.7604ZM22.2947 20.7836C22.3061 21.0275 22.3863 21.2603 22.5353 21.4543C22.8447 21.8534 23.4348 21.9365 23.8531 21.6372C23.9218 21.5873 23.9848 21.5263 24.0421 21.4543C24.363 21.033 24.363 20.3402 24.0421 19.9189C23.8817 19.7027 23.6296 19.5752 23.3603 19.5697C22.7301 19.5309 22.289 20.002 22.2947 20.7836ZM28.2933 20.8168C28.2474 19.3923 29.2157 18.3281 30.5907 18.2893C32.0517 18.245 33.1174 19.1928 33.1632 20.5785C33.209 21.9808 32.321 22.973 30.9517 23.106C29.4563 23.2502 28.2704 22.2026 28.2933 20.8168ZM29.7313 20.6838C29.7199 20.961 29.8058 21.2326 29.9777 21.4598C30.2928 21.8589 30.8829 21.9365 31.2955 21.6261C31.3585 21.5818 31.41 21.5263 31.4616 21.4709C31.7939 21.0496 31.7939 20.3402 31.4673 19.9189C31.3069 19.7083 31.0548 19.5752 30.7855 19.5697C30.1668 19.5364 29.7313 19.991 29.7313 20.6838ZM27.7891 19.7138C27.7891 20.573 27.7948 21.4321 27.7891 22.2912C27.7948 22.6848 27.474 23.0118 27.0672 23.0229C26.9985 23.0229 26.924 23.0174 26.8552 23.0007C26.5688 22.9287 26.351 22.6349 26.351 22.2857V17.8791C26.351 17.6186 26.3453 17.3636 26.351 17.1031C26.3568 16.6763 26.6375 16.3992 27.0615 16.3992C27.4969 16.3936 27.7891 16.6708 27.7891 17.1142C27.7948 17.9789 27.7891 18.8491 27.7891 19.7138Z"
+                                fill="white"></path>
+                            <path
+                                d="M22.2947 20.7828C22.289 20.0013 22.7302 19.5302 23.3547 19.5634C23.6239 19.5745 23.876 19.702 24.0364 19.9181C24.3573 20.3339 24.3573 21.0322 24.0364 21.4535C23.7271 21.8526 23.1369 21.9357 22.7187 21.6364C22.65 21.5865 22.5869 21.5255 22.5296 21.4535C22.3864 21.2595 22.3062 21.0267 22.2947 20.7828ZM29.7314 20.683C29.7314 19.9957 30.1668 19.5357 30.7856 19.569C31.0549 19.5745 31.307 19.7075 31.4674 19.9181C31.794 20.3394 31.794 21.0544 31.4617 21.4701C31.1408 21.8636 30.545 21.9302 30.1382 21.6198C30.0752 21.5754 30.0236 21.52 29.9778 21.459C29.8059 21.2318 29.7257 20.9602 29.7314 20.683Z"
+                                fill="#0068FF"></path>
+                        </g>
+                        <defs>
+                            <linearGradient id="paint4_linear" x1="22" y1="0" x2="22" y2="44"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="50%" stop-color="#3985f7"></stop>
+                                <stop offset="100%" stop-color="#1272e8"></stop>
+                            </linearGradient>
+                            <clipPath id="clip0">
+                                <rect width="26.3641" height="24.2" fill="white" transform="translate(8.78906 9.90234)">
+                                </rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="tooltip-text">Chat với chúng tôi qua Zalo</span>
+                </a>
+            </li>
+            <li class="addThis_item">
+                <!-- <a class="addThis_item--icon" data-toggle="modal" href="#addthis-modalContact" aria-label="email"> -->
+                <a class="addThis_item--icon" href="mailto:ActiveEnglish.edu.vn@gmail.com" rel="nofollow">
+                    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="22" fill="url(#paint1_linear)"></circle>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.4589 11.6667H32.5414C33.1621 11.6667 33.6993 11.8861 34.153 12.3245C34.6062 12.7634 34.8332 13.2904 34.8332 13.9064C34.8332 14.6435 34.599 15.3481 34.1319 16.0197C33.6639 16.6914 33.0816 17.2655 32.3846 17.7413C30.0672 19.3131 28.3185 20.4998 27.1311 21.3061C26.4785 21.7489 25.9931 22.0787 25.6817 22.2905C25.6355 22.3222 25.5634 22.3723 25.4675 22.4396C25.3643 22.5117 25.2337 22.6037 25.0729 22.7174C24.7625 22.9368 24.5048 23.114 24.2994 23.2495C24.0938 23.3846 23.8457 23.5363 23.5545 23.7043C23.2631 23.8724 22.9887 23.9983 22.7309 24.0823C22.4731 24.1661 22.2344 24.2082 22.0148 24.2082H22.0006H21.9863C21.7667 24.2082 21.5281 24.1661 21.2702 24.0823C21.0125 23.9983 20.7378 23.8721 20.4466 23.7043C20.1552 23.5363 19.9068 23.385 19.7017 23.2495C19.4964 23.114 19.2386 22.9368 18.9284 22.7174C18.7672 22.6037 18.6366 22.5118 18.5334 22.4393L18.5233 22.4323C18.4325 22.3688 18.3638 22.3208 18.3195 22.2905C17.9197 22.0157 17.4354 21.6846 16.8739 21.3022C16.2152 20.8532 15.4486 20.3329 14.5671 19.7359C12.9342 18.6303 11.9554 17.9654 11.6308 17.7413C11.0388 17.3494 10.4802 16.8107 9.95513 16.1248C9.43011 15.4387 9.16748 14.8018 9.16748 14.214C9.16748 13.4864 9.36539 12.8796 9.76184 12.3944C10.158 11.9095 10.7234 11.6667 11.4589 11.6667ZM33.4002 19.2392C31.4494 20.5296 29.7913 21.6405 28.4258 22.5725L34.8324 28.8337V18.0213C34.4217 18.4695 33.9443 18.8752 33.4002 19.2392ZM9.1665 18.0214C9.58659 18.4788 10.0691 18.8848 10.6132 19.2393C12.6414 20.5863 14.2935 21.6952 15.5757 22.5701L9.1665 28.8335V18.0214ZM34.0421 30.8208C33.6172 31.1883 33.1173 31.3745 32.5403 31.3745H11.4578C10.8809 31.3745 10.3807 31.1883 9.95575 30.8208L17.2287 23.7122C17.4107 23.8399 17.5789 23.9592 17.7306 24.0679C18.2751 24.4597 18.7165 24.7654 19.0556 24.9845C19.3944 25.2041 19.8455 25.4279 20.4091 25.6564C20.9726 25.8853 21.4976 25.9993 21.9847 25.9993H21.9989H22.0132C22.5002 25.9993 23.0253 25.8852 23.5888 25.6564C24.152 25.4279 24.6032 25.2041 24.9423 24.9845C25.2814 24.7654 25.7231 24.4597 26.2672 24.0679C26.427 23.955 26.5961 23.8362 26.7705 23.7141L34.0421 30.8208Z"
+                            fill="white"></path>
+                        <defs>
+                            <linearGradient id="paint1_linear" x1="22" y1="0" x2="22" y2="44"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="50%" stop-color="#70f3ff"></stop>
+                                <stop offset="100%" stop-color="#00dcf0"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="tooltip-text">Đăng kí thông tin và để lại lời nhắn</span>
+                </a>
+            </li>
+            <li class="addThis_item">
+                <a class="addThis_item--icon" href="https://join.skype.com/invite/xVmVXfybhkQc" target="_blank"
+                    rel="nofollow noreferrer" aria-label="zalo">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="border-radius: 50%;"
+                        xml:space="preserve">
+                        <g>
+                            <rect x="0" y="0" style="fill:#15ACE5;" width="455.731" height="455.731"></rect>
+                            <path style="fill:#FFFFFF;"
+                                d="M379.742,257.242c1.77-9.097,2.708-18.492,2.708-28.107c0-80.82-65.518-146.338-146.338-146.338   c-9.615,0-19.01,0.938-28.107,2.708c-12.507-7.319-27.052-11.532-42.589-11.532c-46.65,0-84.467,37.817-84.467,84.467   c0,15.537,4.214,30.082,11.532,42.588c-1.77,9.097-2.708,18.492-2.708,28.107c0,80.82,65.518,146.338,146.338,146.338   c9.615,0,19.01-0.938,28.107-2.708c12.507,7.319,27.052,11.532,42.588,11.532c46.65,0,84.467-37.817,84.467-84.467   C391.275,284.293,387.061,269.749,379.742,257.242z M238.892,329.634c-52,0-78-19.5-86-44s9.5-31.5,15-32s17.167,0.833,20.5,11   c3.465,10.567,15,31.5,40,34s41.5-9,46.5-21s-4-28.5-42.5-34s-78.5-22.5-78.5-61s44-54,86-54s63.293,23.721,68,33   c5.833,11.5,3.833,30.661-10,34c-14.5,3.5-22-4.5-32.5-24c-10.858-20.165-49.5-15-62.5-3.5s-9.5,28,44.5,38.5s74,30,74,60.5   S290.892,329.634,238.892,329.634z">
+                            </path>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                    <span class="tooltip-text">Chat với chúng tôi qua Skype</span>
+                </a>
+            </li>
+
+
+
+
+        </ul>
+    </div>
+
+    <div class="actionToolbar_mobile visible-xs ">
+        <ul class="actionToolbar_listing">
+            <li>
+                <a href="tel:0975999839" rel="nofollow" aria-label="phone">
+                    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.0087 9.35552C14.1581 9.40663 14.3885 9.52591 14.5208 9.61114C15.3315 10.148 17.5888 13.0324 18.3271 14.4726C18.7495 15.2949 18.8903 15.9041 18.758 16.3558C18.6214 16.8415 18.3953 17.0971 17.384 17.9109C16.9786 18.239 16.5988 18.5756 16.5391 18.6651C16.3855 18.8866 16.2617 19.3212 16.2617 19.628C16.266 20.3395 16.7269 21.6305 17.3328 22.6232C17.8021 23.3944 18.6428 24.3828 19.4749 25.1413C20.452 26.0361 21.314 26.6453 22.2869 27.1268C23.5372 27.7488 24.301 27.9064 24.86 27.6466C25.0008 27.5826 25.1501 27.4974 25.1971 27.4591C25.2397 27.4208 25.5683 27.0202 25.9268 26.5772C26.618 25.7079 26.7759 25.5674 27.2496 25.4055C27.8513 25.201 28.4657 25.2563 29.0844 25.5716C29.5538 25.8145 30.5779 26.4493 31.2393 26.9095C32.1098 27.5187 33.9703 29.0355 34.2221 29.3381C34.6658 29.8834 34.7427 30.5821 34.4439 31.3534C34.1281 32.1671 32.8992 33.6925 32.0415 34.3444C31.2649 34.9323 30.7145 35.1581 29.9891 35.1922C29.3917 35.222 29.1442 35.1709 28.3804 34.8556C22.3893 32.3887 17.6059 28.7075 13.8081 23.65C11.8239 21.0084 10.3134 18.2688 9.28067 15.427C8.67905 13.7696 8.64921 13.0495 9.14413 12.2017C9.35753 11.8438 10.2664 10.9575 10.9278 10.4633C12.0288 9.64524 12.5365 9.34273 12.9419 9.25754C13.2193 9.19787 13.7014 9.24473 14.0087 9.35552Z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="//zalo.me/0932093566" target="_blank" rel="nofollow noreferrer" aria-label="zalo">
+                    <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.274 34.0907C15.7773 34.0856 16.2805 34.0804 16.783 34.0804C16.7806 34.0636 16.7769 34.0479 16.7722 34.0333C16.777 34.0477 16.7808 34.0632 16.7832 34.0798C16.8978 34.0798 17.0124 34.0854 17.127 34.0965H25.4058C26.0934 34.0965 26.7809 34.0977 27.4684 34.0989C28.8434 34.1014 30.2185 34.1039 31.5935 34.0965H31.6222C33.5357 34.0798 35.0712 32.5722 35.0597 30.7209V27.4784C35.0597 27.4582 35.0612 27.4333 35.0628 27.4071C35.0676 27.3257 35.0731 27.2325 35.0368 27.2345C34.9337 27.2401 34.7711 27.2757 34.7138 27.3311C34.2744 27.6145 33.8483 27.924 33.4222 28.2335C32.57 28.8525 31.7179 29.4715 30.7592 29.8817C27.0284 31.0993 23.7287 31.157 20.2265 30.3385C20.0349 30.271 19.9436 30.2786 19.7816 30.292C19.6773 30.3007 19.5436 30.3118 19.3347 30.3068C19.3093 30.3077 19.2829 30.3085 19.2554 30.3093C18.9099 30.3197 18.4083 30.3348 17.8088 30.6877C16.4051 31.1034 14.5013 31.157 13.5175 31.0147C13.522 31.0245 13.5247 31.0329 13.5269 31.0407C13.5236 31.0341 13.5204 31.0275 13.5173 31.0208C13.5036 31.0059 13.4864 30.9927 13.4696 30.98C13.4163 30.9393 13.3684 30.9028 13.46 30.8268C13.4867 30.8102 13.5135 30.7929 13.5402 30.7757C13.5937 30.7412 13.6472 30.7067 13.7006 30.6771C14.4512 30.206 15.1559 29.6905 15.6199 28.9311C16.2508 28.1911 15.9584 27.9025 15.4009 27.3524L15.3799 27.3317C12.6639 24.6504 11.8647 21.8054 12.148 17.9785C12.486 15.8778 13.4829 14.0708 14.921 12.4967C15.7918 11.5433 16.8288 10.7729 17.9632 10.1299C17.9796 10.1198 17.9987 10.1116 18.0182 10.1032C18.0736 10.0793 18.1324 10.0541 18.1408 9.98023C18.1475 9.92191 18.0507 9.90264 18.0163 9.90264C17.3698 9.90264 16.7316 9.89705 16.0964 9.89148C14.8346 9.88043 13.5845 9.86947 12.3041 9.90265C10.465 9.95254 8.78889 11.1779 8.81925 13.3614C8.82689 17.2194 8.82435 21.0749 8.8218 24.9296C8.82053 26.8567 8.81925 28.7835 8.81925 30.7104C8.81925 32.5007 10.2344 34.0028 12.085 34.0749C13.1465 34.1125 14.2107 34.1016 15.274 34.0907ZM13.5888 31.1403C13.5935 31.1467 13.5983 31.153 13.6032 31.1594C13.7036 31.2455 13.8031 31.3325 13.9021 31.4202C13.8063 31.3312 13.7072 31.2423 13.6035 31.1533C13.5982 31.1487 13.5933 31.1444 13.5888 31.1403ZM16.5336 33.8108C16.4979 33.7885 16.4634 33.7649 16.4337 33.7362C16.4311 33.7358 16.4283 33.7352 16.4254 33.7345C16.4281 33.7371 16.4308 33.7397 16.4335 33.7423C16.4632 33.7683 16.4978 33.79 16.5336 33.8108Z">
+                            </path>
+                            <path
+                                d="M17.6768 21.6754C18.5419 21.6754 19.3555 21.6698 20.1633 21.6754C20.6159 21.6809 20.8623 21.8638 20.9081 22.213C20.9597 22.6509 20.6961 22.9447 20.2034 22.9502C19.2753 22.9613 18.3528 22.9558 17.4247 22.9558C17.1554 22.9558 16.8919 22.9669 16.6226 22.9502C16.2903 22.9336 15.9637 22.8671 15.8033 22.5345C15.6429 22.2019 15.7575 21.9026 15.9752 21.631C16.8575 20.5447 17.7455 19.4527 18.6336 18.3663C18.6851 18.2998 18.7367 18.2333 18.7883 18.1723C18.731 18.0781 18.6508 18.1224 18.582 18.1169C17.9633 18.1114 17.3388 18.1169 16.72 18.1114C16.5768 18.1114 16.4335 18.0947 16.296 18.067C15.9695 17.995 15.7689 17.679 15.8434 17.3686C15.895 17.158 16.0669 16.9862 16.2846 16.9363C16.4221 16.903 16.5653 16.8864 16.7085 16.8864C17.7284 16.8809 18.7539 16.8809 19.7737 16.8864C19.9571 16.8809 20.1347 16.903 20.3123 16.9474C20.7019 17.0749 20.868 17.4241 20.7133 17.7899C20.5758 18.1058 20.3581 18.3774 20.1404 18.649C19.3899 19.5747 18.6393 20.4948 17.8888 21.4093C17.8258 21.4814 17.7685 21.5534 17.6768 21.6754Z">
+                            </path>
+                            <path
+                                d="M24.3229 18.7604C24.4604 18.5886 24.6036 18.4279 24.8385 18.3835C25.2911 18.2948 25.7151 18.5775 25.7208 19.021C25.738 20.1295 25.7323 21.2381 25.7208 22.3467C25.7208 22.6349 25.526 22.8899 25.2453 22.973C24.9588 23.0783 24.6322 22.9952 24.4432 22.7568C24.3458 22.6404 24.3057 22.6183 24.1682 22.7236C23.6468 23.1338 23.0567 23.2058 22.4207 23.0063C21.4009 22.6848 20.9827 21.9143 20.8681 20.9776C20.7478 19.9632 21.0973 19.0986 22.0369 18.5664C22.816 18.1175 23.6067 18.1563 24.3229 18.7604ZM22.2947 20.7836C22.3061 21.0275 22.3863 21.2603 22.5353 21.4543C22.8447 21.8534 23.4348 21.9365 23.8531 21.6372C23.9218 21.5873 23.9848 21.5263 24.0421 21.4543C24.363 21.033 24.363 20.3402 24.0421 19.9189C23.8817 19.7027 23.6296 19.5752 23.3603 19.5697C22.7301 19.5309 22.289 20.002 22.2947 20.7836ZM28.2933 20.8168C28.2474 19.3923 29.2157 18.3281 30.5907 18.2893C32.0517 18.245 33.1174 19.1928 33.1632 20.5785C33.209 21.9808 32.321 22.973 30.9517 23.106C29.4563 23.2502 28.2704 22.2026 28.2933 20.8168ZM29.7313 20.6838C29.7199 20.961 29.8058 21.2326 29.9777 21.4598C30.2928 21.8589 30.8829 21.9365 31.2955 21.6261C31.3585 21.5818 31.41 21.5263 31.4616 21.4709C31.7939 21.0496 31.7939 20.3402 31.4673 19.9189C31.3069 19.7083 31.0548 19.5752 30.7855 19.5697C30.1668 19.5364 29.7313 19.991 29.7313 20.6838ZM27.7891 19.7138C27.7891 20.573 27.7948 21.4321 27.7891 22.2912C27.7948 22.6848 27.474 23.0118 27.0672 23.0229C26.9985 23.0229 26.924 23.0174 26.8552 23.0007C26.5688 22.9287 26.351 22.6349 26.351 22.2857V17.8791C26.351 17.6186 26.3453 17.3636 26.351 17.1031C26.3568 16.6763 26.6375 16.3992 27.0615 16.3992C27.4969 16.3936 27.7891 16.6708 27.7891 17.1142C27.7948 17.9789 27.7891 18.8491 27.7891 19.7138Z">
+                            </path>
+                            <path
+                                d="M22.2947 20.7828C22.289 20.0013 22.7302 19.5302 23.3547 19.5634C23.6239 19.5745 23.876 19.702 24.0364 19.9181C24.3573 20.3339 24.3573 21.0322 24.0364 21.4535C23.7271 21.8526 23.1369 21.9357 22.7187 21.6364C22.65 21.5865 22.5869 21.5255 22.5296 21.4535C22.3864 21.2595 22.3062 21.0267 22.2947 20.7828ZM29.7314 20.683C29.7314 19.9957 30.1668 19.5357 30.7856 19.569C31.0549 19.5745 31.307 19.7075 31.4674 19.9181C31.794 20.3394 31.794 21.0544 31.4617 21.4701C31.1408 21.8636 30.545 21.9302 30.1382 21.6198C30.0752 21.5754 30.0236 21.52 29.9778 21.459C29.8059 21.2318 29.7257 20.9602 29.7314 20.683Z"
+                                fill="#fff"></path>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <!-- <a data-toggle="modal" href="#addthis-modalContact" rel="nofollow" aria-label="email"> -->
+                <a href="mailto:ActiveEnglish.edu.vn@gmail.com" rel="nofollow">
+                    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.4589 11.6667H32.5414C33.1621 11.6667 33.6993 11.8861 34.153 12.3245C34.6062 12.7634 34.8332 13.2904 34.8332 13.9064C34.8332 14.6435 34.599 15.3481 34.1319 16.0197C33.6639 16.6914 33.0816 17.2655 32.3846 17.7413C30.0672 19.3131 28.3185 20.4998 27.1311 21.3061C26.4785 21.7489 25.9931 22.0787 25.6817 22.2905C25.6355 22.3222 25.5634 22.3723 25.4675 22.4396C25.3643 22.5117 25.2337 22.6037 25.0729 22.7174C24.7625 22.9368 24.5048 23.114 24.2994 23.2495C24.0938 23.3846 23.8457 23.5363 23.5545 23.7043C23.2631 23.8724 22.9887 23.9983 22.7309 24.0823C22.4731 24.1661 22.2344 24.2082 22.0148 24.2082H22.0006H21.9863C21.7667 24.2082 21.5281 24.1661 21.2702 24.0823C21.0125 23.9983 20.7378 23.8721 20.4466 23.7043C20.1552 23.5363 19.9068 23.385 19.7017 23.2495C19.4964 23.114 19.2386 22.9368 18.9284 22.7174C18.7672 22.6037 18.6366 22.5118 18.5334 22.4393L18.5233 22.4323C18.4325 22.3688 18.3638 22.3208 18.3195 22.2905C17.9197 22.0157 17.4354 21.6846 16.8739 21.3022C16.2152 20.8532 15.4486 20.3329 14.5671 19.7359C12.9342 18.6303 11.9554 17.9654 11.6308 17.7413C11.0388 17.3494 10.4802 16.8107 9.95513 16.1248C9.43011 15.4387 9.16748 14.8018 9.16748 14.214C9.16748 13.4864 9.36539 12.8796 9.76184 12.3944C10.158 11.9095 10.7234 11.6667 11.4589 11.6667ZM33.4002 19.2392C31.4494 20.5296 29.7913 21.6405 28.4258 22.5725L34.8324 28.8337V18.0213C34.4217 18.4695 33.9443 18.8752 33.4002 19.2392ZM9.1665 18.0214C9.58659 18.4788 10.0691 18.8848 10.6132 19.2393C12.6414 20.5863 14.2935 21.6952 15.5757 22.5701L9.1665 28.8335V18.0214ZM34.0421 30.8208C33.6172 31.1883 33.1173 31.3745 32.5403 31.3745H11.4578C10.8809 31.3745 10.3807 31.1883 9.95575 30.8208L17.2287 23.7122C17.4107 23.8399 17.5789 23.9592 17.7306 24.0679C18.2751 24.4597 18.7165 24.7654 19.0556 24.9845C19.3944 25.2041 19.8455 25.4279 20.4091 25.6564C20.9726 25.8853 21.4976 25.9993 21.9847 25.9993H21.9989H22.0132C22.5002 25.9993 23.0253 25.8852 23.5888 25.6564C24.152 25.4279 24.6032 25.2041 24.9423 24.9845C25.2814 24.7654 25.7231 24.4597 26.2672 24.0679C26.427 23.955 26.5961 23.8362 26.7705 23.7141L34.0421 30.8208Z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!----------------->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="./js/jquery.min.1.11.0.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/plugins.js"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/scripts.js"></script>
+
+    <script>
+        var template = 'index';
+        var formatMoney = '{{amount}}₫';
+        jQuery.themeAssets = {
+            arrowDown: '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12 8" style="enable-background:new 0 0 12 8; width: 12px; height: 8px;" xml:space="preserve"><polyline points="0,2 2,0 6,4 10,0 12,2 6,8 0,2 "/></svg>',
+            arrowRight: '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31 10" style="enable-background:new 0 0 31 10; width: 31px; height: 10px;" xml:space="preserve"><polygon points="31,5 25,0 25,4 0,4 0,6 25,6 25,10 "/></svg>',
+        };
+        jQuery.themeCartSettings = 'overlay';	
+    </script>
+    <script>
+        setTimeout(function () {
+            animation_check();
+        }, 100);
+        function animation_check() {
+            var scrollTop = $(window).scrollTop() - 300;
+            $('.animation-tran').each(function () {
+                if ($(this).offset().top < scrollTop + $(window).height()) {
+                    $(this).addClass('active');
+                }
+            })
+        }
+        $(window).scroll(function () {
+            //setTimeout(function(){
+            animation_check();
+            //}, 500);
+        })
+        document.getElementById("site-header").classList.add("header-style");
+        document.documentElement.style.setProperty('--header-height', document.getElementById('site-header').offsetHeight + 'px');
+        document.documentElement.style.setProperty('--header-mobile-height', document.getElementsByClassName('header-upper-middle')[0].offsetHeight + 'px');
+        window.addEventListener('resize', function () {
+            if (!document.getElementById('site-header').classList.contains('hSticky-nav')) {
+                document.documentElement.style.setProperty('--header-height', document.getElementById('site-header').offsetHeight + 'px');
+                document.documentElement.style.setProperty('--header-mobile-height', document.getElementsByClassName('header-upper-middle')[0].offsetHeight + 'px');
+            }
+        });
+    </script>
+</body>
+
+</html>

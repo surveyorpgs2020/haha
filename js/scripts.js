@@ -259,32 +259,32 @@ function fixHeightProduct(data_parent, data_target, data_image) {
 }
 // Image Product Loaded fix height
 
-// $(document).on('lazyloaded', function(e){	//lazybeforeunveil 
-// 	fixHeightProduct('.wrapper-collection-1 .content-product-list', '.product-resize', '.image-resize');
-// 	if(jQuery(window).width() > 991){		
-// 		jQuery(window).resize(function() {
-// 			fixHeightProduct('.wrapper-collection-1 .content-product-list', '.product-resize', '.image-resize');
-// 		});
-// 	}
-// 	fixHeightProduct('.wrapper-collection-2 .content-product-list', '.product-resize', '.image-resize');
-// 	if(jQuery(window).width() > 991){	
-// 		jQuery(window).resize(function() {
-// 			fixHeightProduct('.wrapper-collection-2 .content-product-list', '.product-resize', '.image-resize');
-// 		});
-// 	}
-// 	fixHeightProduct('#collection-body .content-product-list', '.product-resize', '.image-resize');
-// 	jQuery(window).resize(function() {
-// 		fixHeightProduct('#collection-body .content-product-list', '.product-resize', '.image-resize');
-// 	});
-// 	fixHeightProduct('.list-productRelated .content-product-list', '.product-resize', '.image-resize');
-// 	jQuery(window).resize(function() {
-// 		fixHeightProduct('.list-productRelated .content-product-list', '.product-resize', '.image-resize');
-// 	});
-// 	fixHeightProduct('.search-list-results', '.product-resize', '.image-resize');
-// 	jQuery(window).resize(function() {
-// 		fixHeightProduct('.search-list-results', '.product-resize', '.image-resize');
-// 	});
-// });
+$(document).on('lazyloaded', function(e){	//lazybeforeunveil 
+	fixHeightProduct('.wrapper-collection-1 .content-product-list', '.product-resize', '.image-resize');
+	if(jQuery(window).width() > 991){		
+		jQuery(window).resize(function() {
+			fixHeightProduct('.wrapper-collection-1 .content-product-list', '.product-resize', '.image-resize');
+		});
+	}
+	fixHeightProduct('.wrapper-collection-2 .content-product-list', '.product-resize', '.image-resize');
+	if(jQuery(window).width() > 991){	
+		jQuery(window).resize(function() {
+			fixHeightProduct('.wrapper-collection-2 .content-product-list', '.product-resize', '.image-resize');
+		});
+	}
+	fixHeightProduct('#collection-body .content-product-list', '.product-resize', '.image-resize');
+	jQuery(window).resize(function() {
+		fixHeightProduct('#collection-body .content-product-list', '.product-resize', '.image-resize');
+	});
+	fixHeightProduct('.list-productRelated .content-product-list', '.product-resize', '.image-resize');
+	jQuery(window).resize(function() {
+		fixHeightProduct('.list-productRelated .content-product-list', '.product-resize', '.image-resize');
+	});
+	fixHeightProduct('.search-list-results', '.product-resize', '.image-resize');
+	jQuery(window).resize(function() {
+		fixHeightProduct('.search-list-results', '.product-resize', '.image-resize');
+	});
+});
 function smoothScroll(a, b){
 	$('body,html').animate({
 		scrollTop : a
