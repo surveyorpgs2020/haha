@@ -258,6 +258,7 @@ function fixHeightProduct(data_parent, data_target, data_image) {
 	} catch (ex) {}
 }
 // Image Product Loaded fix height
+
 // $(document).on('lazyloaded', function(e){	//lazybeforeunveil 
 // 	fixHeightProduct('.wrapper-collection-1 .content-product-list', '.product-resize', '.image-resize');
 // 	if(jQuery(window).width() > 991){		
