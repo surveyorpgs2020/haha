@@ -3022,7 +3022,8 @@ table#cart-view tr td.img{width:65px;}
 /* ============ 	ADDTHIS ** addthis ============== */
 .fb_dialog_advanced.fb_customer_chat_bubble_animated_no_badge{ right: 12px!important;;}
 .addThis_listSharing {
-	position: fixed;bottom:35px;   /* cu la 85*/
+	position: fixed;
+	bottom:85px;   /* cu la 85*/
 	z-index: 999;	
 	right:-15px;opacity: 0;	visibility: hidden;
 	transition: all .3s ease;	-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;
