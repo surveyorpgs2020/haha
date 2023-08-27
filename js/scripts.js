@@ -307,7 +307,7 @@ jQuery(document).ready(function(){
 	// $.get('/cart.js').done(function(cart){
 	// 	$('.cart-menu .count').html(cart.item_count);
 	// });
-	if (window.template.indexOf('index') > -1) {
+	if (true) {
 		$('#home-slider .owl-carousel').owlCarousel({
 			items:1,
 			nav: false,
