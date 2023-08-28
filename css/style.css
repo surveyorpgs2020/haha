@@ -7637,12 +7637,13 @@ RESPONSIVE
 		position: sticky;
 		top: 0;
 		border-right: 1px solid #ededed;
-		height: 100vh;
+		/* height: 100vh; */
+		width: 100vw;
 		padding: 0;
 	}
 
 	.box-map iframe {
-		height: 100vh !important
+		height: 100vh !important;
 	}
 
 	/**** INDEX ****/
